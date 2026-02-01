@@ -1,5 +1,5 @@
 This repository contains the source of the **Low-Density Phenomenology** paper  
-[*A Unified Effective Mechanism for Galaxy Rotation Curves and the Hubble Tension*]
+*A Unified Effective Mechanism for Galaxy Rotation Curves and the Hubble Tension*
 (paper D).
 
 This work presents a **phenomenological study** of late-time gravitational and
