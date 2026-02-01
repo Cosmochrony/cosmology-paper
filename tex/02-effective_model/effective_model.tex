@@ -72,6 +72,14 @@
     The dimensionless function $\mu(x)$ encodes the effective saturation of the
     gravitational response.
 
+    For clarity, we work primarily with the $\mu$-formulation in
+    Eq.~\eqref{eq:modified_poisson}.
+    An equivalent algebraic form is sometimes written using an interpolation
+    function $\nu(y)$ defined by $g_{\mathrm{eff}} = \nu(y) g_{\mathrm{N}}$ with
+    $y = g_{\mathrm{N}}/a_\star$.
+    In that notation, $\nu(y) \rightarrow 1$ for $y \gg 1$, ensuring an exactly
+    Newtonian limit.
+
     In this formulation, $\mu(x)$ parametrizes the progressive saturation of the
     effective response as the underlying structural flux approaches its maximal
     resolvable value.
@@ -86,6 +94,12 @@
     \begin{equation}
       \mu(x) \rightarrow x \quad \text{for} \quad x \ll 1 .
     \end{equation}
+
+    We assume $\mu(x)$ to be positive, monotone increasing, and at least $C^{1}$,
+    so that $\Phi_{\mathrm{eff}}$ and its first derivatives remain continuous
+    across the transition.
+    This regularity avoids spurious discontinuities in the effective force and
+    ensures stable orbital dynamics in the transition region.
 
     In the high-acceleration regime $|\nabla \Phi_{\mathrm{eff}}| \gg a_\star$,
     Eq.~\eqref{eq:modified_poisson} reduces to the standard Poisson equation,
@@ -113,6 +127,9 @@
     No halo-by-halo fitting or galaxy-dependent adjustment is introduced.
     All diversity in rotation curve shapes arises from the observed baryonic
     distributions.
+    In this paper $a_\star$ is treated as an effective acceleration threshold.
+    Its universality is interpreted as reflecting an intrinsic bound on the
+    maximal resolvable structural flux of the effective geometric response.
 
   \subsection{Environmental Dependence and Low-Density Regimes}
     \label{subsec:environment}
