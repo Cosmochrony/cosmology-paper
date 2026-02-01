@@ -1,0 +1,45 @@
+\documentclass[fleqn,usenatbib]{mnras}
+\usepackage[T1]{fontenc}
+\usepackage{ae,aecompl}
+\usepackage{newtxtext,newtxmath}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+\title[Unified low-density phenomenology]{A Unified Effective Mechanism for Galaxy Rotation Curves and the Hubble Tension}
+
+\author[J.~Beau]{
+  J\'er\^ome Beau$^{1}$\thanks{E-mail: jerome.beau@cosmochrony.org}\\
+  $^{1}$Independent Researcher, France
+}
+
+\date{Accepted XXX. Received YYY; in original form ZZZ}
+
+\pubyear{2026}
+
+\begin{document}
+  \label{firstpage}
+  \pagerange{\pageref{firstpage}\textendash{}\pageref{lastpage}}
+  \maketitle
+
+\input{abstract}
+  \begin{keywords}
+    galaxies: kinematics and dynamics \textendash{}
+    cosmology: observations \textendash{}
+    cosmology: theory \textendash{}
+    large-scale structure of Universe
+  \end{keywords}
+
+  \input{01-introduction/introduction}
+  \input{02-effective_model/effective_model}
+  \input{03-rotation_curves/rotation_curves}
+  \input{04-voids_hubble/voids_hubble}
+  \input{05-robustness/robustness}
+  \input{06-predictions/predictions}
+  \input{07-conclusion/conclusion}
+
+  \bibliographystyle{mnras}
+  \bibliography{references}
+
+  \label{lastpage}
+\end{document}

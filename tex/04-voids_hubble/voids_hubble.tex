@@ -1,0 +1,115 @@
+\section{Galaxy Rotation Curves}
+  \label{sec:rotation_curves}
+
+  We now test the effective model introduced in
+  Section~\ref{sec:effective_model} against observed galaxy rotation curves.
+  The goal of this section is not to achieve maximal fitting flexibility, but to
+  assess whether a single effective saturation scale can reproduce the main
+  kinematic features of disk galaxies using baryonic matter alone.
+
+  \subsection{Data and Methodology}
+    \label{subsec:data_method}
+
+    We use the SPARC database, which provides high-quality rotation curves together
+    with homogeneous photometry and baryonic mass models.
+    The dataset spans a wide range of galaxy morphologies, surface brightnesses,
+    and dynamical regimes.
+
+    For each galaxy, the baryonic mass distribution is constructed from the
+    observed stellar and gas components.
+    A fixed stellar mass-to-light ratio is assumed for each band, following the
+    standard SPARC prescriptions.
+    No additional dark matter component is introduced.
+
+    The effective acceleration $g_{\mathrm{eff}}(r)$ is obtained by solving
+    Eq.~\eqref{eq:effective_acceleration} using the Newtonian acceleration
+    $g_{\mathrm{N}}(r)$ computed from the baryonic mass distribution.
+    The circular velocity follows from
+    \begin{equation}
+      v_{\mathrm{eff}}(r) = \sqrt{r\, g_{\mathrm{eff}}(r)} .
+    \end{equation}
+
+    The saturation scale $a_\star$ is treated as a universal parameter.
+    Its value is fixed globally by minimizing the total residuals across the
+    sample, rather than optimized on a galaxy-by-galaxy basis.
+
+  \subsection{Representative Fits}
+    \label{subsec:fits}
+
+    Figure references are deferred to Appendix~D, where the full set of numerical
+    fits is presented.
+    Here we summarize the qualitative behavior observed across representative
+    galaxies.
+
+    High-surface-density galaxies are well described by Newtonian dynamics in their
+    inner regions.
+    Deviations from Newtonian predictions appear only at large radii, where the
+    baryonic acceleration drops below the saturation scale.
+    The resulting rotation curves flatten smoothly, without requiring extended
+    mass halos.
+
+    Low-surface-brightness galaxies probe the saturated regime over most of their
+    radial extent.
+    In these systems, the effective acceleration departs from Newtonian behavior
+    already at small radii, naturally producing slowly rising and asymptotically
+    flat rotation curves.
+
+    Across the sample, the model reproduces the observed diversity of rotation curve
+    shapes.
+    This diversity arises solely from differences in the baryonic mass distribution
+    and surface density, not from variations in the effective parameters.
+
+  \subsection{Residuals and Scaling Relations}
+    \label{subsec:residuals}
+
+    We quantify the quality of the fits using radial velocity residuals
+    \begin{equation}
+      \Delta v(r) = v_{\mathrm{obs}}(r) - v_{\mathrm{eff}}(r) .
+    \end{equation}
+
+    The residuals exhibit no systematic radial trends across the sample.
+    In particular, no characteristic scale or radius-dependent bias is observed.
+
+    The effective model naturally reproduces the empirical correlation between
+    rotation curve shape and baryonic surface density.
+    Galaxies with higher central surface density remain in the Newtonian regime
+    over a larger radial range, while diffuse systems enter the saturated regime
+    earlier.
+
+    This behavior is closely related to the observed radial acceleration relation.
+    In the present framework, this relation is not imposed but emerges directly
+    from the effective saturation of the gravitational response at low
+    acceleration.
+
+  \subsection{Universality of the Saturation Scale}
+    \label{subsec:universality}
+
+    A key result of the analysis is the stability of the saturation scale $a_\star$
+    across the sample.
+    Allowing moderate variations of $a_\star$ does not significantly improve the
+    quality of the fits and tends to introduce degeneracies with baryonic mass
+    normalization.
+
+    This supports the interpretation of $a_\star$ as a universal effective scale
+    rather than a phenomenological fitting parameter.
+    All galaxy-to-galaxy variability is accounted for by the observed baryonic
+    structure.
+
+    The absence of halo-by-halo tuning distinguishes this approach from standard
+    dark matter halo modeling and reduces the number of effective degrees of
+    freedom.
+
+  \subsection{Summary}
+    \label{subsec:rc_summary}
+
+    The effective saturation model reproduces the main phenomenological features of
+    galaxy rotation curves across a wide range of systems using baryonic matter
+    alone.
+    The same universal saturation scale governs both high- and low-surface-density
+    galaxies, with smooth transitions between Newtonian and saturated regimes.
+
+    These results motivate extending the analysis to cosmological low-density
+    environments.
+    In the next section, we show that the same effective mechanism leads to
+    environment-dependent signatures in the inferred expansion rate, providing a
+    natural connection to the Hubble tension.
