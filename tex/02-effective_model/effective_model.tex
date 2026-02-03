@@ -20,45 +20,40 @@
   density no longer translate into proportionally stronger dynamical effects.
   As a result, the effective response approaches a plateau rather than vanishing
   asymptotically.
-
   The dynamical motivation for such bounded-response regimes is developed in a
-  companion theoretical work.
-  Here we restrict attention to late-time observational consequences and adopt a
-  minimal parametrization suitable for astrophysical tests~\cite{Beau2026c}.
+  companion theoretical work~\cite{Beau2026c}.
 
-  \subsection{Minimal Assumptions}
+  \subsection{Minimal Assumptions and Domain of Validity}
     \label{subsec:minimal_assumptions}
 
     We assume that gravitational dynamics at galactic and sub-cosmological scales
     can be described by an effective potential $\Phi_{\mathrm{eff}}$ sourced by the
     observed baryonic mass distribution.
-    The model satisfies the following minimal requirements.
+    The model satisfies the following requirements:
 
-    First, the effective dynamics must reduce to standard Newtonian gravity in
-    high-density environments.
-    This ensures consistency with Solar System tests and with the inner regions of
-    high-surface-density galaxies.
+    (i) The effective dynamics must reduce to standard Newtonian gravity in
+    high-density environments, ensuring consistency with Solar System tests.
+    (ii) Deviations are allowed only in diffuse regimes, characterized by low
+    baryonic density or weak gravitational gradients.
+    (iii) The transition is governed by at most one additional universal
+    scale parameter $a_\star$, with no environment-specific tuning.
+    (iv) The model must preserve locality and isotropy at the effective level.
 
-    Second, deviations from Newtonian behavior are allowed only in diffuse regimes,
-    characterized by low baryonic density or weak gravitational gradients.
-    The transition between regimes must be smooth and free of singular behavior.
-
-    Third, the effective modification must be governed by at most one additional
-    scale parameter, denoted $a_\star$, which controls the onset of saturation.
-    No galaxy-dependent or environment-specific tuning is introduced.
-
-    Fourth, the model must preserve locality and isotropy at the effective level.
-    No non-local interactions or preferred directions are assumed.
-
-    Finally, the model must admit a well-defined cosmological interpretation at late
-    times, without altering early-universe observables such as primordial
-    nucleosynthesis or recombination physics.
+    Mathematically, this framework shares the Lagrangian structure of the
+    quasi-linear MOND theories (AQUAL) proposed by Bekenstein and
+    Milgrom~\cite{Bekenstein1984}.
+    However, where traditional MOND modifies the gravitational law $a=a_N$,
+    our framework treats the modification as a \textit{saturated response}
+    dictated by the intrinsic flux limit of the geometric support~\cite{Beau2026b}.
+    This conceptual shift is crucial as it naturally extends the phenomenological
+    successes of galactic MOND to the volumetric density dilution of
+    cosmological voids.
 
   \subsection{Effective Saturating Potential}
     \label{subsec:effective_potential}
 
     We define the effective gravitational potential $\Phi_{\mathrm{eff}}$ through a
-    modified Poisson equation of the form
+    modified Poisson equation of the form:
     \begin{equation}
       \nabla \cdot \left[
                      \mu\!\left( \frac{|\nabla \Phi_{\mathrm{eff}}|}{a_\star} \right)
@@ -68,9 +63,8 @@
       4 \pi G \rho_{\mathrm{b}} ,
       \label{eq:modified_poisson}
     \end{equation}
-    where $\rho_{\mathrm{b}}$ denotes the baryonic mass density.
-    The dimensionless function $\mu(x)$ encodes the effective saturation of the
-    gravitational response.
+    where $\rho_{\mathrm{b}}$ denotes the baryonic mass density and $\mu(x)$ is the
+    dimensionless function encoding the saturation of the gravitational response.
 
     For clarity, we work primarily with the $\mu$-formulation in
     Eq.~\eqref{eq:modified_poisson}.
@@ -104,11 +98,11 @@
     In the high-acceleration regime $|\nabla \Phi_{\mathrm{eff}}| \gg a_\star$,
     Eq.~\eqref{eq:modified_poisson} reduces to the standard Poisson equation,
     recovering Newtonian gravity.
-    In the low-acceleration regime, the effective response saturates, leading to a
-    finite asymptotic force.
+    In the low-acceleration or diffuse regime, the effective response saturates,
+    leading to a finite asymptotic force.
 
     For spherically symmetric systems, the effective radial acceleration
-    $g_{\mathrm{eff}}(r)$ satisfies
+    $g_{\mathrm{eff}}(r)$ satisfies:
     \begin{equation}
       \mu\!\left( \frac{g_{\mathrm{eff}}}{a_\star} \right)
       g_{\mathrm{eff}}
