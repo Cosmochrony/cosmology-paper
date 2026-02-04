@@ -1,35 +1,24 @@
-\documentclass[fleqn,usenatbib]{mnras}
-\usepackage[T1]{fontenc}
-\usepackage{ae,aecompl}
-\usepackage{newtxtext,newtxmath}
+\documentclass{aa}
+
 \usepackage{graphicx}
-\usepackage{amsmath}
-\usepackage{hyperref}
+\usepackage{txfonts}
 \usepackage{natbib}
-
-\title[Unified low-density phenomenology]{A Unified Effective Mechanism for Galaxy Rotation Curves and the Hubble Tension}
-
-\author[J.~Beau]{
-  J\'er\^ome Beau$^{1}$\thanks{E-mail: jerome.beau@cosmochrony.org}\\
-  $^{1}$Independent Researcher, France
-}
-
-\date{Accepted XXX. Received YYY; in original form ZZZ}
-
-\pubyear{2026}
+\usepackage{hyperref}
 
 \begin{document}
-  \label{firstpage}
-  \pagerange{\pageref{firstpage}\textendash{}\pageref{lastpage}}
-  \maketitle
 
-\input{abstract}
-  \begin{keywords}
-    galaxies: kinematics and dynamics \textendash{}
-    cosmology: observations \textendash{}
-    cosmology: theory \textendash{}
-    large-scale structure of Universe
-  \end{keywords}
+  \title{A unified effective mechanism for galaxy rotation curves and the Hubble tension}
+
+  \author{J\'er\^ome Beau}
+  \institute{Independent Researcher, France\\
+  \email{jerome.beau@cosmochrony.org}
+  }
+
+  \date{Received XXX; accepted YYY}
+
+  \input{abstract}
+
+  \maketitle
 
   \input{01-introduction/introduction}
   \input{02-effective_model/effective_model}
@@ -56,9 +45,7 @@
     All scientific claims, modelling choices, numerical results, and interpretations are the sole responsibility of the
     author.
 
+    \bibliographystyle{aa}
+    \bibliography{references}
 
-    \bibliographystyle{mnras}
-  \bibliography{references}
-
-  \label{lastpage}
 \end{document}
