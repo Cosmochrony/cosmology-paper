@@ -16,17 +16,1054 @@
 
   \date{Received XXX; accepted YYY}
 
-  \input{abstract}
+  \abstract{
+    We investigate whether two long-standing observational anomalies---flat galaxy
+    rotation curves and the Hubble constant tension---may originate from a single
+    effective modification of gravitational response operating in low-density
+    regimes.
+
+    We introduce a minimal phenomenological model in which the effective
+    gravitational response saturates below a characteristic acceleration scale,
+    without invoking dark matter particles or altering early-universe cosmology.
+    The model reduces to Newtonian gravity in high-density environments and
+    introduces a smooth, bounded modification in diffuse regions.
+
+    Applied to galactic dynamics, this framework reproduces the main features of
+    observed rotation curves across a wide range of galaxy types using baryonic
+    matter alone, with stable parameter values and no halo-by-halo tuning.
+    Explicit numerical fits to representative galaxies from the SPARC sample
+    demonstrate that the effective saturation scale correlates naturally with
+    observed surface-density trends.
+
+    At cosmological scales, the same mechanism predicts environment-dependent
+    deviations in the locally inferred expansion rate.
+    Cosmic voids emerge as maximal probes of the saturated regime, leading to a
+    systematic offset between local and global measurements of the Hubble constant.
+    This provides a structural explanation for the Hubble tension without
+    introducing new dark components or modifying early-time physics.
+
+    We discuss degeneracies, limitations, and robustness against baryonic
+    uncertainties, and we outline distinctive observational signatures, including
+    void-dependent redshift drift and lensing effects.
+    The results suggest that galaxy rotation curves and the Hubble tension may
+    reflect a common low-density phenomenology, testable with current and
+    forthcoming observations.
+  }
 
   \maketitle
 
-  \input{01-introduction/introduction}
-  \input{02-effective_model/effective_model}
-  \input{03-rotation_curves/rotation_curves}
-  \input{04-voids_hubble/voids_hubble}
-  \input{05-robustness/robustness}
-  \input{06-predictions/predictions}
-  \input{07-conclusion/conclusion}
+  \section{Introduction}
+    \label{sec:introduction}
+
+    Two observational puzzles continue to motivate scrutiny of late-time
+    gravitational phenomenology.
+
+    The first is the ubiquity of flat galaxy rotation curves.
+    Across a wide range of disk galaxies, circular velocities remain nearly
+    constant at large radii, in apparent tension with the expectation from
+    Newtonian dynamics applied to the observed baryonic mass distribution.
+    This behavior has been firmly established by large and homogeneous datasets,
+    most notably the SPARC compilation, which provides resolved rotation curves
+    together with self-consistent baryonic mass models for disk galaxies~\cite{Lelli2016SPARC}.
+    Within the standard cosmological framework, flat rotation curves are typically
+    accounted for by extended dark matter halos.
+    While this approach is empirically successful, it introduces substantial model
+    freedom at the level of individual galaxies and leaves open the question of why
+    tight empirical regularities, such as surface-density-dependent trends and
+    acceleration-based scalings, emerge so prominently in the data~\cite{McGaugh2016RAR}.
+    Historically, these regularities led to the development of the Modified Newtonian
+    Dynamics (MOND) paradigm~\cite{Milgrom1983, Bekenstein1984}, which remains
+    the primary phenomenological benchmark for such anomalies.
+
+    The second puzzle is the Hubble constant tension.
+    Late-time local determinations of $H_0$ based on distance ladder techniques and
+    standard candles remain in significant disagreement with early-time inferences
+    derived from the homogeneous high-redshift Universe as constrained by cosmic
+    microwave background observations~\cite{Riess2022SH0ES,Planck2020}.
+    This discrepancy has persisted across multiple datasets and analysis methods,
+    prompting proposals ranging from unidentified systematics to extensions of the
+    standard cosmological model.
+    Comprehensive reviews indicate that no consensus explanation has yet emerged~\cite{Verde2019Review}.
+    A notable feature of the tension is its strong association with late-time
+    inference in a structured and inhomogeneous Universe.
+
+    Although galaxy rotation curves and the Hubble tension are usually discussed
+    separately, both phenomena probe gravitational and kinematic inference in
+    low-density regimes.
+    Galaxy outskirts and ultra-diffuse systems explore weak-acceleration regions,
+    while cosmic voids represent the most extreme low-density environments on
+    cosmological scales.
+    This motivates the central question addressed in this work:
+    Can a single effective mechanism, active primarily in diffuse environments,
+    account for both classes of anomalies within a unified phenomenological
+    description?
+
+    In this paper, we investigate a minimal effective framework in which departures
+    from Newtonian dynamics arise in low-density environments.
+    In such regimes, the effective gravitational response does not continue to grow
+    indefinitely as density decreases, but instead approaches a plateau controlled
+    by an intrinsic saturation scale.
+    While the mathematical structure of this saturation in the galactic limit
+    shares similarities with the a-field theories of the Bekenstein-Milgrom
+    formulation~\cite{Bekenstein1984}, our approach is conceptually distinct.
+    Rather than an ad hoc modification of the force law, this behavior
+    reflects a limitation in the effective description applicable to
+    diffuse regimes, where dynamical inference becomes progressively
+    insensitive to further reductions in density.
+
+    This phenomenological study is motivated by a broader theoretical context in
+    which bounded-response regimes (of the Born-Infeld type) arise naturally in
+    effective descriptions of gravitational dynamics~\cite{Beau2026c}.
+    Related structural and projection-based considerations are discussed in
+    companion works focusing on the informational foundations of the geometric
+    support~\cite{Beau2026a,Beau2026b}.
+    Here we deliberately restrict attention to late-time observational
+    consequences and do not rely on the full underlying framework.
+
+    The model is constructed to reduce to standard Newtonian behavior in
+    high-density environments and to introduce a smooth bounded modification in
+    diffuse regimes.
+    It is treated explicitly as an effective description of late-time
+    phenomenology.
+    No modification of early-universe physics is assumed, and the model is not
+    presented as a fundamental theory of gravity.
+
+    The analysis proceeds in two stages.
+    First, we test the model against galaxy rotation curve data, focusing on the
+    SPARC sample, and evaluate whether a single universal saturation scale can
+    reproduce the observed diversity of rotation curve shapes using baryonic matter
+    alone, without halo-by-halo tuning.
+    Second, we explore the cosmological implications of the same mechanism in
+    low-density environments, emphasizing cosmic voids as maximal probes and
+    deriving testable signatures for environment-dependent expansion inference.
+
+    A key aim of this work is falsifiability.
+    Beyond fitting existing data, we identify observational discriminants that can
+    confirm or exclude the framework.
+    These include correlations between locally inferred values of $H_0$ and
+    large-scale environment, redshift-dependent suppression of the local offset,
+    void-specific redshift drift, and weak lensing signatures.
+
+    The structure of the paper is as follows.
+    Section~\ref{sec:effective_model} introduces the effective model and its minimal
+    assumptions.
+    Section~\ref{sec:rotation_curves} presents rotation curve tests and diagnostics.
+    Section~\ref{sec:voids_hubble} discusses the implications for cosmic voids and
+    the Hubble tension.
+    Section~\ref{sec:robustness} examines robustness, degeneracies, and limits.
+    Section~\ref{sec:predictions} summarizes predictions and observational tests.
+    Section~\ref{sec:conclusion} concludes.
+
+  \section{Effective Model}
+    \label{sec:effective_model}
+
+    This section introduces a minimal effective framework designed to capture
+    gravitational phenomenology in low-density environments.
+    The model is constructed to address galaxy rotation curves and the Hubble
+    tension within a single unified description, without modifying early-universe
+    physics or invoking dark matter particles in this effective regime.
+
+    The emphasis is deliberately phenomenological.
+    Only the minimal assumptions required to reproduce the observed anomalies are
+    introduced.
+    The model is not presented as a fundamental theory of gravity, but as an
+    effective description valid in specific environmental regimes.
+
+    In the present framework, saturation is interpreted as a limitation in the
+    resolution of structural information available to the effective description.
+    In low-density environments, the number of independent relations contributing
+    to the gravitational response becomes bounded, so that additional decreases in
+    density no longer translate into proportionally stronger dynamical effects.
+    As a result, the effective response approaches a plateau rather than vanishing
+    asymptotically.
+    The dynamical motivation for such bounded-response regimes is developed in a
+    companion theoretical work~\cite{Beau2026c}.
+
+    \subsection{Minimal Assumptions and Domain of Validity}
+      \label{subsec:minimal_assumptions}
+
+      We assume that gravitational dynamics at galactic and sub-cosmological scales
+      can be described by an effective potential $\Phi_{\mathrm{eff}}$ sourced by the
+      observed baryonic mass distribution.
+      The model satisfies the following requirements:
+
+      (i) The effective dynamics must reduce to standard Newtonian gravity in
+      high-density environments, ensuring consistency with Solar System tests.
+      (ii) Deviations are allowed only in diffuse regimes, characterized by low
+      baryonic density or weak gravitational gradients.
+      (iii) The transition is governed by at most one additional universal
+      scale parameter $a_\star$, with no environment-specific tuning.
+      (iv) The model must preserve locality and isotropy at the effective level.
+
+      Mathematically, this framework shares the Lagrangian structure of the
+      quasi-linear MOND theories (AQUAL) proposed by Bekenstein and
+      Milgrom~\cite{Bekenstein1984}.
+      However, whereas traditional MOND introduces this modification as a fundamental
+      alteration of the relation between the gravitational field and its Newtonian
+      counterpart, our framework treats the modification as a \textit{saturated response}
+      dictated by the intrinsic flux limit of the geometric support~\cite{Beau2026b}.
+      This conceptual shift is crucial as it naturally extends the phenomenological
+      successes of galactic MOND to the volumetric density dilution of
+      cosmological voids.
+      ~Notably, the same universal constant $a_\star$ is applied here to both
+      localized galactic kinematics and large-scale expansion inference, providing
+      a testable unification between the Radial Acceleration Relation and the
+      Hubble tension.
+
+      We emphasize that the present framework is not intended as a replacement for MOND
+      phenomenology, but as an interpretation of its low-acceleration successes as an
+      emergent effective limit within a broader descriptive structure.
+
+    \subsection{Effective Saturating Potential}
+      \label{subsec:effective_potential}
+
+      We define the effective gravitational potential $\Phi_{\mathrm{eff}}$ through a
+      modified Poisson equation of the form:
+      \begin{equation}
+        \nabla \cdot \left[
+                       \mu\!\left( \frac{|\nabla \Phi_{\mathrm{eff}}|}{a_\star} \right)
+                       \nabla \Phi_{\mathrm{eff}}
+        \right]
+        =
+        4 \pi G \rho_{\mathrm{b}} ,
+        \label{eq:modified_poisson}
+      \end{equation}
+      where $\rho_{\mathrm{b}}$ denotes the baryonic mass density and $\mu(x)$ is the
+      dimensionless function encoding the saturation of the gravitational response.
+
+      For clarity, we work primarily with the $\mu$-formulation in
+      Eq.~\eqref{eq:modified_poisson}.
+      An equivalent algebraic form is sometimes written using an interpolation
+      function $\nu(y)$ defined by $g_{\mathrm{eff}} = \nu(y) g_{\mathrm{N}}$ with
+      $y = g_{\mathrm{N}}/a_\star$.
+      In that notation, $\nu(y) \rightarrow 1$ for $y \gg 1$, ensuring an exactly
+      Newtonian limit.
+
+      In this formulation, $\mu(x)$ parametrizes the progressive saturation of the
+      effective response as the underlying structural flux approaches its maximal
+      resolvable value.
+      The specific form adopted here provides a minimal interpolation between regimes
+      and is not intended as a fundamental law.
+
+      The function $\mu(x)$ satisfies the limiting behaviors
+      \begin{equation}
+        \mu(x) \rightarrow 1 \quad \text{for} \quad x \gg 1 ,
+      \end{equation}
+      and
+      \begin{equation}
+        \mu(x) \rightarrow x \quad \text{for} \quad x \ll 1 .
+      \end{equation}
+
+      We assume $\mu(x)$ to be positive, monotone increasing, and at least $C^{1}$,
+      so that $\Phi_{\mathrm{eff}}$ and its first derivatives remain continuous
+      across the transition.
+      This regularity avoids spurious discontinuities in the effective force and
+      ensures stable orbital dynamics in the transition region.
+
+      In the high-acceleration regime $|\nabla \Phi_{\mathrm{eff}}| \gg a_\star$,
+      Eq.~\eqref{eq:modified_poisson} reduces to the standard Poisson equation,
+      recovering Newtonian gravity.
+      In the low-acceleration or diffuse regime, the effective response saturates,
+      leading to a finite asymptotic force.
+
+      For spherically symmetric systems, the effective radial acceleration
+      $g_{\mathrm{eff}}(r)$ satisfies:
+      \begin{equation}
+        \mu\!\left( \frac{g_{\mathrm{eff}}}{a_\star} \right)
+        g_{\mathrm{eff}}
+        =
+        g_{\mathrm{N}} ,
+        \label{eq:effective_acceleration}
+      \end{equation}
+      where $g_{\mathrm{N}}$ is the Newtonian acceleration sourced by baryons alone.
+
+      Equation~\eqref{eq:effective_acceleration} yields asymptotically flat rotation
+      curves for isolated galaxies with finite baryonic mass.
+      The transition scale $a_\star$ controls both the onset of flattening and the
+      amplitude of the asymptotic velocity.
+
+      Importantly, $a_\star$ is treated as a universal parameter in this work.
+      No halo-by-halo fitting or galaxy-dependent adjustment is introduced.
+      All diversity in rotation curve shapes arises from the observed baryonic
+      distributions.
+      In this paper $a_\star$ is treated as an effective acceleration threshold.
+      Its universality is interpreted as reflecting an intrinsic bound on the
+      maximal resolvable structural flux of the effective geometric response.
+      ~Consequently, any environmental volume whose gravitational gradient
+      falls below $a_\star$ is expected to exhibit an effective dynamical offset
+      governed by this same fundamental scale.
+
+    \subsection{Environmental Dependence and Low-Density Regimes}
+      \label{subsec:environment}
+
+      The effective modification introduced above is intrinsically sensitive to the
+      local gravitational environment.
+      Regions of low baryonic density or weak gravitational gradients probe the
+      saturated regime most strongly.
+
+      This environmental dependence plays a central role at cosmological scales.
+      Cosmic voids, characterized by extremely low matter density, naturally sample
+      the deep saturation regime of the effective dynamics.
+      As a result, local kinematic measurements performed within void-dominated
+      regions may exhibit systematic deviations from globally inferred expansion
+      rates.
+      ~The Hubble tension is thus interpreted here not as a failure of early-universe
+      cosmology, but as a possible local expansion bias emerging from the saturation
+      of the gravitational response in underdense late-time environments.
+
+      In this framework, galaxy rotation curves and the Hubble tension arise as two
+      manifestations of the same low-density phenomenology.
+      Galaxies probe saturation radially through declining surface density, while
+      cosmic voids probe it volumetrically through large-scale dilution.
+      ~The identification of a single scale $a_\star$ to account for both
+      galactic kinematics and the expansion rate offset constitutes the central
+      unification of this model.
+
+      The following sections test this effective model against galactic rotation
+      curve data and explore its implications for local measurements of the Hubble
+      constant.
+
+  \section{Galaxy Rotation Curves}
+    \label{sec:rotation_curves}
+
+    We now test the effective model introduced in
+    Section~\ref{sec:effective_model} against observed galaxy rotation curves.
+    The goal of this section is not to achieve maximal fitting flexibility, but to
+    assess whether a single effective saturation scale can reproduce the main
+    kinematic features of disk galaxies using baryonic matter alone.
+
+    A useful consistency check is that the acceleration scale governing the
+    transition can be expressed in terms of late-time cosmological kinematics.
+    For $H_0$ in the range inferred observationally, the combination
+    $a_\star \sim c H_0 / 2\pi$ is of order $10^{-10}\,\mathrm{m\,s^{-2}}$,
+    comparable to the characteristic acceleration scale empirically identified in
+    galaxy dynamics~\cite{McGaugh2016RAR}.
+    This motivates treating the same $a_\star$ as a single scale linking galactic
+    outskirts and low-density cosmic environments, without modifying early-time
+    cosmology.
+
+    \subsection{Data and Methodology}
+      \label{subsec:data_method}
+
+      We use the SPARC database, which provides high-quality rotation curves together
+      with homogeneous photometry and baryonic mass models for disk galaxies spanning
+      a wide range of morphologies, surface brightnesses, and dynamical
+      regimes~\cite{Lelli2016SPARC}.
+
+      The numerical pipeline used to generate the rotation-curve figures and diagnostics is available as open-source
+      software~\cite{CosmochronySimulation}.
+
+      For each galaxy, the baryonic mass distribution is constructed from the
+      observed stellar and gas components.
+      Stellar mass-to-light ratios are fixed following the standard SPARC
+      prescriptions.
+      No additional dark matter component is introduced in this effective
+      description.
+
+      The effective acceleration $g_{\mathrm{eff}}(r)$ is obtained by solving
+      Eq.~\eqref{eq:effective_acceleration} using the Newtonian acceleration
+      $g_{\mathrm{N}}(r)$ computed from the baryonic mass distribution.
+      The circular velocity then follows from
+      \begin{equation}
+        v_{\mathrm{eff}}(r) = \sqrt{r\, g_{\mathrm{eff}}(r)} .
+      \end{equation}
+
+      The saturation scale $a_\star$ is treated as a universal parameter.
+      Its value is fixed globally by minimizing the total residuals across the
+      sample, rather than optimized on a galaxy-by-galaxy basis.
+
+    \subsection{Representative Fits}
+      \label{subsec:fits}
+
+      Figure references are deferred to Appendix~D, where the full set of numerical
+      fits is presented.
+      Here we summarize the qualitative behavior observed across representative
+      galaxies.
+
+      High-surface-density galaxies are well described by Newtonian dynamics in
+      their inner regions.
+      Deviations from Newtonian predictions appear only at large radii, where the
+      baryonic acceleration drops below the saturation scale.
+      The resulting rotation curves flatten smoothly, without requiring extended
+      mass halos, in agreement with observed trends across high-surface-brightness
+      disks~\cite{Lelli2016SPARC}.
+
+      Low-surface-brightness galaxies probe the saturated regime over most of their
+      radial extent.
+      In these systems, the effective acceleration departs from Newtonian behavior
+      already at small radii, naturally producing slowly rising and asymptotically
+      flat rotation curves, a feature commonly observed in diffuse systems~\cite{McGaugh2016RAR}.
+
+      Across the sample, the model reproduces the observed diversity of rotation
+      curve shapes.
+      This diversity arises solely from differences in the baryonic mass
+      distribution and surface density, not from variations in the effective
+      parameters.
+
+      \begin{figure}[t]
+        \centering
+        \includegraphics[width=\linewidth]{galaxy_rotcurves_3panel}
+        \caption[Representative SPARC rotation curves]{
+          Representative galaxy rotation curves from the SPARC sample.
+          Observed circular velocities (points) are compared with the effective model
+          prediction (solid lines) computed from the baryonic mass distribution alone.
+          Left: NGC~3198 (nearly flat).
+          Centre: NGC~2403 (rising).
+          Right: NGC~5055 (mildly declining).
+          The same universal saturation scale $a_\star$ is used for all systems.
+          The only galaxy-dependent parameter is the stellar mass-to-light ratio
+          $\Upsilon_\star$, fixed following standard SPARC prescriptions.
+          The code used to generate these curves is publicly available
+          \protect\citep{CosmochronySimulation}.
+        }
+        \label{fig:rotation-curves}
+      \end{figure}
+
+      Representative examples illustrating these behaviors are shown in
+      Fig.~\ref{fig:rotation-curves}.
+
+    \subsection{Residuals and Scaling Relations}
+      \label{subsec:residuals}
+
+      We quantify the quality of the fits using radial velocity residuals
+      \begin{equation}
+        \Delta v(r) = v_{\mathrm{obs}}(r) - v_{\mathrm{eff}}(r) .
+      \end{equation}
+
+      The residuals exhibit no systematic radial trends across the sample.
+      In particular, no characteristic scale or radius-dependent bias is observed.
+
+      The effective model naturally reproduces the empirical correlation between
+      rotation curve shape and baryonic surface density.
+      Galaxies with higher central surface density remain in the Newtonian regime
+      over a larger radial range, while diffuse systems enter the saturated regime
+      earlier.
+
+      The transition radius at which rotation curves flatten corresponds closely to
+      the regime where the effective surface flux density approaches the saturation
+      limit.
+      Beyond this point, further decreases in baryonic density no longer translate
+      into stronger dynamical suppression, leading to asymptotically flat rotation
+      velocities.
+
+      This behavior is closely related to the observed radial acceleration relation.
+      In the present framework, this relation is not imposed but emerges directly
+      from the effective saturation of the gravitational response at low
+      acceleration~\cite{McGaugh2016RAR}.
+
+    \subsection{Universality of the Saturation Scale}
+      \label{subsec:universality}
+
+      A key result of the analysis is the stability of the saturation scale
+      $a_\star$ across the sample.
+      Allowing moderate variations of $a_\star$ does not significantly improve the
+      quality of the fits and tends to introduce degeneracies with baryonic mass
+      normalization.
+
+      This supports the interpretation of $a_\star$ as a universal effective scale
+      rather than a phenomenological fitting parameter.
+      All galaxy-to-galaxy variability is accounted for by the observed baryonic
+      structure.
+
+      The absence of halo-by-halo tuning distinguishes this approach from standard
+      dark matter halo modeling, which typically requires galaxy-dependent halo
+      profiles and parameters.
+
+      The universality of the saturation scale follows from the existence of a
+      fundamental bound on the effective flux that can be supported by the geometric
+      substrate.
+      Unlike dark matter halo models, the present framework involves a single
+      acceleration scale set by an intrinsic saturation of the underlying geometric
+      response.
+
+    \subsection{Summary}
+      \label{subsec:rc_summary}
+
+      The effective saturation model reproduces the main phenomenological features
+      of galaxy rotation curves across a wide range of systems using baryonic matter
+      alone.
+      The same universal saturation scale governs both high- and
+      low-surface-density galaxies, with smooth transitions between Newtonian and
+      saturated regimes.
+
+      These results motivate extending the analysis to cosmological low-density
+      environments.
+      In the next section, we show that the same effective mechanism leads to
+      environment-dependent signatures in the inferred expansion rate, providing a
+      natural connection to the Hubble tension.
+
+  \section{Cosmic Voids and the Hubble Tension}
+    \label{sec:voids_hubble}
+
+    In this section we explore the cosmological implications of the effective
+    saturation mechanism introduced above.
+    We focus on late-time, low-density environments and show how the same effective
+    dynamics responsible for flat galaxy rotation curves naturally leads to
+    environment-dependent signatures in the locally inferred expansion rate.
+
+    The analysis is restricted to phenomenology at low redshift.
+    Early-universe physics and global cosmological evolution are assumed to remain
+    unchanged.
+
+    \subsection{Local Expansion in Low-Density Environments}
+      \label{subsec:local_expansion}
+
+      Measurements of the Hubble constant rely on local kinematic observables,
+      including distance ladders, standard candles, and redshift--distance relations.
+      These measurements implicitly assume that the local expansion rate is
+      representative of the global cosmological background~\cite{Riess2022SH0ES,Freedman2021TRGB}.
+
+      However, large-scale structure surveys show that the late-time Universe is
+      highly inhomogeneous.
+      A significant fraction of the cosmic volume is occupied by voids, characterized
+      by matter densities well below the cosmic mean~\cite{Keenan2013KBC}.
+
+      In the effective framework introduced in
+      Section~\ref{sec:effective_model}, low-density environments probe the saturated
+      regime of the gravitational response.
+      As a result, kinematic relations inferred from such regions may deviate from the
+      global average, even in the absence of any modification to early-time
+      cosmology.
+
+      We therefore distinguish between a global expansion rate
+      $H_{\mathrm{global}}$, defined by the homogeneous background constrained by
+      early-Universe observables~\cite{Planck2020}, and an effective local expansion
+      rate $H_{\mathrm{loc}}$, inferred from observations within a given environment.
+
+    \subsection{Effective Expansion Rate in Voids}
+      \label{subsec:void_effect}
+
+      Cosmic voids represent the deepest and most extended low-density regions in the
+      late Universe.
+      Within voids, baryonic and total matter densities are suppressed, and typical
+      gravitational accelerations fall below the saturation scale $a_\star$ over large
+      volumes~\cite{Keenan2013KBC}.
+
+      In this regime, the effective dynamics modifies the relation between local
+      kinematics and the underlying background expansion.
+      To leading order, this effect can be captured by an environment-dependent
+      renormalization of the inferred expansion rate,
+      \begin{equation}
+        H_{\mathrm{loc}} = H_{\mathrm{global}} \left( 1 + \delta_{\mathrm{eff}} \right) ,
+        \label{eq:hloc}
+      \end{equation}
+      where $\delta_{\mathrm{eff}}$ is a positive correction that increases with the
+      degree of saturation.
+
+      The correction $\delta_{\mathrm{eff}}$ depends on the depth and size of the void,
+      as well as on the characteristic acceleration scale $a_\star$.
+      Shallower or denser regions remain close to the Newtonian regime and yield
+      $\delta_{\mathrm{eff}} \approx 0$.
+
+      Importantly, this mechanism does not require any additional energy component or
+      modification of the background Friedmann equations.
+      The global expansion history remains unchanged.
+      Only the local inference of $H_0$ is affected.
+
+      Within this interpretation, the enhanced local expansion inferred in cosmic
+      voids reflects a reduced geometric constraint rather than an additional energy
+      component.
+      In regions where the density of relational nodes is low, the effective
+      projection onto a geometric description operates closer to its saturation
+      limit.
+      This induces a local dilation of metric relations, which we refer to as a
+      \emph{geometric relaxation offset}, modifying the locally inferred expansion
+      rate without altering the global background evolution.
+
+    \subsection{Connection to the Hubble Tension}
+      \label{subsec:hubble_tension}
+
+      The Hubble tension arises from the discrepancy between early-time inferences of
+      the Hubble constant and late-time local measurements~\cite{Riess2022SH0ES,Planck2020}.
+      Comprehensive reviews indicate that no single explanation has yet achieved
+      consensus~\cite{Verde2019Review}.
+
+      Within the present framework, this discrepancy reflects the environmental
+      sensitivity of local kinematic probes.
+      Early-time measurements, anchored in the homogeneous and high-density early
+      Universe, recover $H_{\mathrm{global}}$.
+      By contrast, late-time distance ladder measurements are performed within a
+      structured Universe, often sampling void-dominated regions either directly or
+      indirectly.
+
+      If local measurements preferentially probe saturated low-density environments,
+      Eq.~\eqref{eq:hloc} predicts a systematically enhanced value of the inferred
+      Hubble constant,
+      \begin{equation}
+        H_{\mathrm{loc}} > H_{\mathrm{global}} .
+      \end{equation}
+
+      The magnitude of the offset depends on the void environment surrounding the
+      observers and sources.
+      This naturally explains why the tension is most prominent in local measurements
+      and why it does not manifest in early-time observables.
+
+      The extent to which local underdensities alone can account for the full tension
+      remains debated in the literature~\cite{Shanks2019Void,Kennworthy2019VoidCritique}.
+      The present framework provides a distinct, testable mechanism in which the
+      effect arises from an effective saturation of geometric response rather than
+      from a modification of the background expansion.
+
+      Because the dynamics derives from an effective potential
+      $\Phi_{\mathrm{eff}}$, the framework admits a conserved effective energy and a
+      corresponding modified virial relation for stationary systems.
+      This provides a consistency check that equilibrium disk galaxies remain
+      dynamically stable in the transition regime.
+
+    \subsection{Observable Signatures}
+      \label{subsec:void_signatures}
+
+      The effective saturation framework leads to several testable observational
+      signatures.
+
+      First, the inferred Hubble constant should correlate with the large-scale
+      environment.
+      Measurements performed in or near deep voids are expected to yield higher
+      values of $H_0$ than those performed in denser regions.
+
+      Second, the effect should exhibit redshift dependence.
+      At sufficiently large redshift, line-of-sight averaging over multiple
+      environments suppresses the environmental bias, and the inferred expansion rate
+      should converge toward $H_{\mathrm{global}}$.
+
+      Third, the model predicts distinct signatures in void-related observables,
+      including redshift drift and weak lensing~\cite{Cai2017VoidLensing}.
+      In particular, the effective expansion rate inside voids modifies the expected
+      temporal evolution of redshift for sources embedded in low-density regions.
+
+      These signatures provide independent tests of the framework and allow it to be
+      falsified using current and forthcoming data.
+
+    \subsection{Predicted Amplitude and Redshift Dependence}
+      \label{subsec:hubble_predictions}
+
+      A key feature of the present framework is that the magnitude of the locally inferred
+      deviation from the global expansion rate is not an arbitrary phenomenological choice.
+      Once the saturation scale $a_\star$ is fixed by galactic dynamics, the expected
+      environmental offset in the inferred Hubble constant is constrained to remain at
+      the percent level.
+
+      For representative underdensities characteristic of large cosmic voids on scales of
+      a few hundred megaparsecs, the framework predicts a fractional enhancement
+      \begin{equation}
+        \frac{\Delta H}{H}
+        \;\equiv\;
+        \frac{H_{\mathrm{loc}} - H_{\mathrm{global}}}{H_{\mathrm{global}}}
+        \;\sim\;
+        \text{a few percent} ,
+      \end{equation}
+      comparable in magnitude to the observed discrepancy between local distance-ladder
+      measurements and early-Universe inferences.
+
+      The effect is predicted to be redshift dependent.
+      At higher redshift, the large-scale structure is less developed and line-of-sight
+      averaging over multiple environments becomes increasingly efficient.
+      As a result, the locally inferred expansion rate is expected to converge toward
+      $H_{\mathrm{global}}$ with increasing redshift, providing a clear observational
+      discriminant.
+
+      Deviations well above the percent level or the complete absence of any measurable
+      offset would directly challenge the proposed mechanism.
+
+    \subsection{Interpretation of the Hubble Tension as an Environmental Effect}
+      \label{subsec:interpretation-of-the-hubble-tension-as-an-environmental-effect}
+
+      The framework developed here suggests that the Hubble tension does not reflect a change in the global expansion
+      history,
+      but rather a limitation of homogeneous kinematic inference when applied to a strongly inhomogeneous late-time
+      Universe.
+      Early-universe determinations of $H_0$, anchored in a nearly homogeneous background, recover the global expansion
+      rate.
+      By contrast, late-time local measurements probe structured environments in which the effective dynamical
+      response operates in a low-density, saturated regime.
+
+      In this context, the discrepancy between early- and late-time determinations of $H_0$ arises from a mismatch between
+      global averaging and local inference.
+      Measurements performed in void-dominated or underdense regions sample an effective response that no longer
+      scales linearly with decreasing density, leading to a systematically enhanced locally inferred expansion rate.
+
+      From this perspective, the Hubble tension may be viewed not as an anomaly requiring additional dark components
+      or early-time modifications, but as a diagnostic of gravitational and kinematic inference in diffuse environments.
+      This interpretation naturally predicts weak but systematic correlations between inferred values of $H_0$
+      and large-scale environmental indicators such as void depth or filament membership.
+
+    \subsection{Summary}
+      \label{subsec:void_summary}
+
+      In this section we have shown that the same effective saturation mechanism that
+      accounts for galaxy rotation curves also leads to environment-dependent
+      modifications of the locally inferred expansion rate.
+
+      Cosmic voids emerge as natural probes of this effect and provide a structural
+      connection between galactic dynamics and the Hubble tension.
+      The framework preserves the global cosmological expansion while predicting
+      observable deviations in local measurements.
+
+      In the next section, we examine the robustness of these results, discuss
+      degeneracies with standard cosmological effects, and outline the limits of the
+      effective description.
+
+  \section{Robustness, Degeneracies, and Limits}
+    \label{sec:robustness}
+
+    In this section we examine the robustness of the effective saturation framework,
+    its degeneracies with standard astrophysical and cosmological effects, and the
+    limits of its applicability.
+    This assessment is essential for evaluating whether the proposed mechanism
+    represents a genuine explanatory alternative or merely a reparameterization of
+    existing models.
+
+    \subsection{Baryonic Uncertainties}
+      \label{subsec:baryonic_uncertainties}
+
+      The predictions of the effective model depend explicitly on the baryonic mass
+      distribution.
+      Uncertainties in stellar mass-to-light ratios, gas content, and distance
+      estimates therefore propagate into the inferred rotation curves.
+      Such uncertainties are well documented in rotation curve analyses and are a
+      generic limitation of baryon-based dynamical modeling~\cite{Lelli2016SPARC}.
+
+      We have tested the sensitivity of the fits to reasonable variations in stellar
+      mass normalization.
+      While moderate shifts in mass-to-light ratio affect the detailed shape of the
+      inner rotation curves, they do not eliminate the need for a low-acceleration
+      modification at large radii.
+      In particular, the emergence of asymptotically flat rotation curves remains
+      robust across the allowed baryonic parameter range, consistent with previous
+      empirical findings~\cite{McGaugh2016RAR}.
+
+      At cosmological scales, baryonic uncertainties primarily affect the detailed
+      mapping between large-scale structure and local measurements.
+      They do not remove the qualitative distinction between dense environments,
+      which remain close to the Newtonian regime, and voids, which probe the
+      saturated regime most strongly~\cite{Keenan2013KBC}.
+
+    \subsection{Relation to MOND-like Phenomenology}
+      \label{subsec:mond_relation}
+
+      The phenomenology described in this work shares qualitative similarities with
+      acceleration-based frameworks such as Modified Newtonian Dynamics (MOND),
+      originally proposed to account for flat galaxy rotation curves without
+      invoking dark matter~\cite{Milgrom1983,Famaey2012Review}.
+
+      In particular, both approaches introduce a characteristic acceleration scale
+      below which departures from Newtonian expectations become significant.
+      However, the present framework differs conceptually and structurally from
+      MOND-like modifications of the equations of motion.
+
+      Here, the low-acceleration behavior is not postulated as a fundamental
+      modification of gravity, nor as a change in inertia.
+      Instead, it arises from an effective saturation of geometric response in
+      low-density environments, reflecting a limitation of the effective
+      description rather than a modification of the underlying dynamical laws.
+
+      This distinction becomes especially relevant in cosmological applications.
+      Whereas MOND-based approaches face well-known challenges in consistently
+      addressing large-scale structure and cosmological observations, the effective
+      saturation framework preserves the standard background expansion and modifies
+      only the local inference of kinematic quantities in diffuse environments.
+
+    \subsection{Degeneracies with Standard Astrophysical Effects}
+      \label{subsec:degeneracies}
+
+      Several standard mechanisms have been proposed to address galaxy rotation
+      curves and the Hubble tension within the $\Lambda$CDM framework.
+      It is therefore important to assess potential degeneracies.
+
+      At galactic scales, feedback processes and baryon--halo coupling can reproduce
+      some features of flattened rotation curves within dark matter halo models,
+      particularly in low-mass systems~\cite{DiCintio2014Feedback}.
+      However, such mechanisms typically require galaxy-dependent tuning and do not
+      naturally reproduce the observed correlation between surface density and
+      dynamical behavior across the full range of disk galaxies~\cite{McGaugh2016RAR}.
+
+      In contrast, the effective saturation model introduces no halo degrees of
+      freedom and relies on a single universal scale.
+      This difference leads to distinct residual patterns and scaling relations,
+      which can be used to discriminate between models in detailed rotation curve
+      analyses.
+
+      At cosmological scales, local inhomogeneities, peculiar velocities, and sample
+      variance are known to affect Hubble constant measurements~\cite{Freedman2021TRGB}.
+      While these effects contribute to scatter, multiple studies indicate that
+      their magnitude alone is generally insufficient to account for the full
+      observed tension~\cite{Verde2019Review}.
+      The effective saturation mechanism instead predicts a systematic
+      environment-dependent bias, rather than a purely stochastic one, providing a
+      clear observational discriminant.
+
+    \subsection{Environmental Selection Effects}
+      \label{subsec:selection_effects}
+
+      Local measurements of the Hubble constant are not uniformly distributed across
+      cosmic environments.
+      Distance ladder calibrators and standard candles are preferentially observed
+      in specific regions of the large-scale structure~\cite{Riess2022SH0ES}.
+
+      This selection bias plays a central role in the present framework.
+      If the observational strategy favors void-dominated regions, the inferred
+      expansion rate will be systematically enhanced relative to the global value.
+
+      Importantly, this is not an ad hoc assumption but a testable prediction.
+      Future analyses correlating $H_0$ measurements with void catalogs and density
+      reconstructions can directly assess the magnitude of this effect, as already
+      explored in the context of local underdensity scenarios~\cite{Shanks2019Void,Kennworthy2019VoidCritique}.
+
+    \subsection{Range of Validity}
+      \label{subsec:validity}
+
+      The effective saturation framework is not intended to apply universally at all
+      scales and epochs.
+      Its domain of validity is restricted to late-time, low-density environments.
+
+      In high-density regimes, including the early Universe, galaxy interiors, and
+      the Solar System, the model reduces to standard Newtonian and relativistic
+      behavior by construction.
+      No deviations from established physics are expected or required in these
+      contexts, consistent with existing precision tests of gravity~\cite{Will2014Tests}.
+
+      At sufficiently large redshift, line-of-sight averaging over multiple
+      environments suppresses the effective saturation signature.
+      The model therefore predicts a convergence toward standard cosmological
+      behavior at high redshift, in agreement with current observations~\cite{Planck2020}.
+
+    \subsection{Falsifiability}
+      \label{subsec:falsifiability}
+
+      The effective saturation framework makes several falsifiable predictions.
+
+      If future measurements show no correlation between locally inferred values of
+      $H_0$ and the surrounding large-scale environment, the proposed mechanism is
+      disfavored.
+      Similarly, if galaxy rotation curves in extremely diffuse systems deviate
+      systematically from the predicted saturation behavior, the model would
+      require revision or rejection.
+
+      Conversely, confirmation of environment-dependent expansion signatures or
+      consistent saturation behavior across diverse galactic systems would strongly
+      support the framework.
+
+    \subsection{Summary}
+      \label{subsec:robustness_summary}
+
+      The effective saturation model is robust against reasonable baryonic
+      uncertainties and cannot be trivially absorbed into existing astrophysical or
+      cosmological effects.
+      Its predictive power arises from the use of a single universal scale and from
+      its explicit environmental dependence.
+
+      The framework is limited in scope but sharply testable.
+      Its validity hinges on future observational probes of low-density
+      environments, making it a falsifiable proposal rather than a flexible
+      phenomenological fit.
+
+  \section{Predictions and Observational Tests}
+    \label{sec:predictions}
+
+    The effective saturation framework introduced in this work leads to a set of
+    distinct and testable predictions.
+    These predictions arise directly from the environmental dependence of the
+    effective dynamics and do not rely on additional assumptions or parameter
+    tuning.
+
+    \subsection{Environment-Dependent Hubble Measurements}
+      \label{subsec:h0_environment}
+
+      A primary prediction of the model is a correlation between the locally inferred
+      Hubble constant and the surrounding large-scale environment.
+
+      Observers and standard candles located in or near deep cosmic voids are expected
+      to yield systematically higher values of $H_0$ than those located in denser
+      regions.
+      Conversely, measurements anchored in overdense environments should converge
+      more closely toward the global expansion rate $H_{\mathrm{global}}$.
+
+      This prediction can be tested by cross-correlating existing and forthcoming
+      $H_0$ measurements with void catalogs and density reconstructions derived from
+      large-scale galaxy surveys, as already explored in the context of local
+      underdensity scenarios~\cite{Keenan2013KBC,Shanks2019Void,Kennworthy2019VoidCritique}.
+      A null result would strongly disfavor the effective saturation mechanism.
+
+    \subsection{Redshift Dependence of the Hubble Offset}
+      \label{subsec:redshift_dependence}
+
+      The environmental bias predicted by the model is inherently scale dependent.
+      At sufficiently low redshift, local measurements are sensitive to individual
+      large-scale structures and probe the saturated regime.
+
+      At increasing redshift, line-of-sight averaging over multiple environments
+      progressively suppresses the bias.
+      As a result, the inferred expansion rate is predicted to converge smoothly
+      toward $H_{\mathrm{global}}$.
+
+      This behavior provides a clear observational signature.
+      Measurements of $H_0$ performed over different redshift ranges should exhibit a
+      systematic trend, with the largest deviations appearing at the lowest
+      redshifts, consistent with expectations from environmental averaging
+      arguments~\cite{Verde2019Review}.
+
+      An important quantitative consequence of the framework is that the expected
+      deviation remains at the percent level and peaks at intermediate redshift.
+      Once the saturation scale is fixed by galactic dynamics, the model predicts
+      that the fractional offset in the inferred expansion rate should be of order
+      a few percent at $z \sim 1$, while remaining negligible at both very low and
+      sufficiently high redshift.
+
+      Such a deviation is within the sensitivity range of forthcoming large-scale
+      surveys, including DESI and \textit{Euclid}, and provides a clear target for
+      falsification.
+      Deviations significantly larger or smaller than this level would directly
+      challenge the proposed mechanism.
+
+    \subsection{Void-Specific Redshift Drift}
+      \label{subsec:redshift_drift}
+
+      The effective saturation mechanism also affects the temporal evolution of
+      redshift for sources embedded in low-density environments.
+
+      In the standard cosmological framework, the redshift drift is determined solely
+      by the global expansion history.
+      In the present model, sources located in deep voids experience a modified
+      effective expansion rate, leading to a small but systematic deviation in the
+      expected redshift drift signal.
+
+      Future high-precision spectroscopic experiments may be able to detect this
+      environment-dependent drift by comparing sources located in voids and in
+      denser regions, complementing existing proposals for redshift-drift
+      measurements~\cite{Cai2017VoidLensing}.
+      The effect is predicted to be absent at high redshift, where environmental
+      averaging dominates.
+
+    \subsection{Weak Lensing Signatures in Voids}
+      \label{subsec:void_lensing}
+
+      Because the effective dynamics modifies the gravitational response in
+      low-density regions, it also affects weak gravitational lensing by cosmic
+      voids.
+
+      The model predicts subtle deviations in void lensing profiles compared to
+      standard expectations.
+      In particular, the effective saturation leads to a reduced lensing efficiency
+      relative to what would be inferred from baryonic matter alone, without invoking
+      additional dark components.
+
+      Void lensing measurements therefore provide an independent probe of the
+      framework, complementary to kinematic tests, and have already been identified
+      as sensitive diagnostics of gravitational dynamics in underdense
+      regions~\cite{Cai2017VoidLensing}.
+
+    \subsection{Predictions for Ultra-Diffuse Galaxies}
+      \label{subsec:udg}
+
+      Ultra-diffuse galaxies represent extreme low-surface-density systems and probe
+      the saturated regime across most of their extent.
+      Since their systematic identification in deep imaging surveys, such systems
+      have attracted considerable interest as tests of galaxy dynamics in diffuse
+      environments~\cite{vanDokkum2016UDG}.
+
+      The effective saturation model predicts that ultra-diffuse galaxies should
+      exhibit slowly rising rotation curves that approach a common asymptotic
+      behavior, largely independent of detailed baryonic structure.
+      Significant deviations from this pattern would challenge the universality of
+      the saturation scale.
+
+      Observational studies have revealed a wide diversity of inferred dynamical mass
+      content among ultra-diffuse galaxies, ranging from apparently dark-matter-rich
+      systems to galaxies consistent with little or no dark matter~\cite{vanDokkum2019DF2,ManceraPina2019UDG}.
+      Within the present framework, this diversity arises naturally from differences
+      in how deeply individual systems probe the saturated regime.
+
+      In ultra-diffuse galaxies, the large apparent mass discrepancy inferred from
+      kinematics should therefore not be interpreted as evidence for an extended
+      distribution of unseen matter.
+      Rather, it reflects a geometric threshold effect: the baryonic configuration
+      probes the deeply saturated regime, where further reductions in density no
+      longer increase the effective dynamical response.
+
+      As a result, the inferred dynamical mass reflects the onset of saturation
+      rather than the presence of an additional gravitating component.
+      The ``missing mass'' is thus not a material distribution, but an emergent
+      consequence of limited geometric resolution in low-density systems.
+
+      This interpretation leads to a falsifiable observational prediction.
+      If the apparent mass discrepancy in ultra-diffuse galaxies originates from a
+      geometric saturation effect rather than from a physical mass component, then
+      independent mass tracers should not reveal correspondingly extended matter
+      distributions.
+
+      In particular, weak lensing signals, satellite dynamics, and stellar velocity
+      dispersion profiles are expected to systematically underpredict the dynamical
+      mass inferred from rotation or dispersion measurements in the deepest
+      saturation regime.
+      A positive detection of massive, spatially extended halos in ultra-diffuse
+      galaxies would therefore directly falsify the present framework.
+
+      Because ultra-diffuse galaxies probe the deepest saturation regime, they
+      provide a particularly sensitive test of the universality of the saturation
+      scale $a_\star$.
+
+      Ultra-diffuse galaxies thus constitute a clean observational laboratory for
+      distinguishing between material and geometric explanations of apparent mass
+      discrepancies in the low-density regime.
+
+    \subsection{Summary}
+      \label{subsec:predictions_summary}
+
+      The effective saturation framework yields a coherent set of predictions across
+      galactic and cosmological scales.
+      All predictions are driven by environmental dependence and involve no
+      additional free parameters beyond the saturation scale already fixed by
+      rotation curve data.
+
+      The framework is therefore falsifiable with current or near-future
+      observational capabilities.
+      Confirmation or rejection of these signatures will decisively determine
+      whether the proposed mechanism captures a genuine aspect of low-density
+      gravitational phenomenology.
+
+  \section{Conclusion}
+    \label{sec:conclusion}
+
+    We have investigated whether two persistent observational anomalies---flat
+    galaxy rotation curves and the Hubble constant tension---may originate from a
+    common effective mechanism operating in low-density environments.
+
+    Using a minimal phenomenological framework characterized by a single saturation
+    scale, we have shown that baryonic matter alone can account for the main features
+    of observed galaxy rotation curves across a wide range of systems, without
+    halo-by-halo tuning or the introduction of dark matter particles in this
+    effective description.
+    This conclusion is supported by explicit numerical comparisons with
+    representative rotation curves drawn from the SPARC sample.
+    The same mechanism naturally extends to cosmological low-density regions, where
+    it predicts environment-dependent deviations in the locally inferred expansion
+    rate.
+
+    Cosmic voids emerge as key laboratories for testing this framework.
+    By probing the deeply saturated regime, they provide a structural explanation
+    for why late-time local measurements of the Hubble constant may systematically
+    exceed the global value inferred from early-universe observables, while leaving
+    the background cosmological evolution unchanged.
+
+    The model is intentionally limited in scope.
+    It does not modify early-time physics, does not alter the global expansion
+    history, and does not claim universal validity across all regimes.
+    Its strength lies instead in its parsimony and falsifiability.
+    All predictions follow from a single effective scale already constrained by
+    galactic dynamics.
+
+    We have identified several observational tests capable of confirming or
+    excluding this framework, including correlations between $H_0$ measurements and
+    large-scale environment, redshift-dependent suppression of the local offset,
+    void-specific redshift drift, weak lensing signatures, and the dynamics of
+    ultra-diffuse galaxies.
+
+    Taken together, these results suggest that galaxy rotation curves and the
+    Hubble tension may reflect a shared low-density phenomenology rather than
+    independent failures of the standard cosmological model.
+    Whether this effective description captures a genuine aspect of gravitational
+    physics or represents an intermediate phenomenological layer will ultimately be
+    decided by observational tests in the coming years.
 
   \section*{Data Availability}
 
