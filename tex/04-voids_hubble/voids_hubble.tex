@@ -62,36 +62,38 @@
       \left[
         1
         +
-        \delta_\rho\,
-        f\!\left(
-             \frac{g_{\mathrm{void}}}{a_\star}
-      \right)
+        \delta_{\mathrm{eff}}
       \right] ,
+      \quad \text{with} \quad
+      \delta_{\mathrm{eff}} = \delta_\rho \cdot f\!\left(
+                                                     \frac{g_{\mathrm{void}}}{a_\star}
+      \right),
       \label{eq:hloc}
     \end{equation}
-    Here
-    \(
-    \delta_\rho = 1 - \rho_{\mathrm{void}}/\rho_{\mathrm{global}}
-    \)
+    where
+    \(\delta_\rho = 1 - \rho_{\mathrm{void}}/\rho_{\mathrm{global}}\)
     is the density contrast of the void,
     and
-    \(
-    g_{\mathrm{void}} = G M_{\mathrm{void}} / R_{\mathrm{void}}^2
-    \)
+    \(g_{\mathrm{void}} = G M_{\mathrm{void}} / R_{\mathrm{void}}^2\)
     is the characteristic gravitational field strength within the void.
     The function \(f(x)\) is a dimensionless saturation function with the properties:
     \begin{itemize}
       \item \(f(x) \rightarrow 0\) for \(x \gg 1\) (unsaturated regime),
       \item \(0 < f(x) < f_{\mathrm{max}}\) for \(x \ll 1\) (saturated regime),
-      \item \(f_{\mathrm{max}} \sim 0.1\), consistent with the observed amplitude of the Hubble tension.
+      \item \(f_{\mathrm{max}} \lesssim 0.1\), reflecting the maximal projection deficit in deep voids
+      (Section 4.3 of~\cite{Beau2026c}).
     \end{itemize}
     The saturation scale \(a_\star\) is fixed independently by galaxy rotation curve data
     (Section~\ref{subsec:universality}).
 
-    The correction $\delta_{\mathrm{eff}}$ depends on the depth and spatial extent of
-    the void, as well as on the characteristic saturation scale $a_\star$.
+    For typical voids (\(\delta_\rho \approx 0.3\), \(g_{\mathrm{void}} \ll a_\star\)),
+    Eq.~\eqref{eq:hloc} yields \(\Delta H/H \sim 0.03\)--\(0.08\),
+    consistent with local measurements~\cite{Riess2022SH0ES}.
+
+    The correction \(\delta_{\mathrm{eff}}\) depends on the depth and spatial extent of
+    the void, as well as on the characteristic saturation scale \(a_\star\).
     Denser or more weakly underdense regions remain close to the unsaturated regime
-    and yield $\delta_{\mathrm{eff}} \approx 0$.
+    and yield \(\delta_{\mathrm{eff}} \approx 0\).
 
     Importantly, this mechanism does not require any additional energy component
     or modification of the background Friedmann equations.
@@ -118,7 +120,7 @@
     Within the present framework, this discrepancy reflects the environmental
     sensitivity of late-time kinematic inference.
     Early-time measurements, anchored in the nearly homogeneous and high-density
-    early Universe, recover $H_{\mathrm{global}}$.
+    early Universe, recover \(H_{\mathrm{global}}\).
     By contrast, late-time distance ladder measurements are performed in a
     structured Universe and may preferentially sample void-dominated regions.
 
@@ -126,7 +128,7 @@
     Eq.~\eqref{eq:hloc} predicts a systematically enhanced inferred value of the
     Hubble constant,
     \begin{equation}
-      H_{\mathrm{loc}} > H_{\mathrm{global}} .
+      H_{\mathrm{loc}} > H_{\mathrm{global}}.
     \end{equation}
 
     The magnitude of the offset depends on the surrounding large-scale environment
@@ -141,7 +143,7 @@
     from a modification of the background expansion.
 
     Because the dynamics derives from an effective potential
-    $\Phi_{\mathrm{eff}}$,
+    \(\Phi_{\mathrm{eff}}\),
     the framework admits a conserved effective energy and a corresponding modified
     virial relation for stationary systems.
     This provides a consistency check ensuring that equilibrium disk galaxies remain
@@ -156,13 +158,13 @@
     First, the inferred Hubble constant should correlate with the large-scale
     environment.
     Measurements performed in or near deep voids are expected to yield higher
-    values of $H_0$ than those performed in denser regions.
+    values of \(H_0\) than those performed in denser regions.
 
     Second, the effect should exhibit redshift dependence.
     At sufficiently large redshift, line-of-sight averaging over multiple
     environments suppresses the environmental bias,
     and the inferred expansion rate should converge toward
-    $H_{\mathrm{global}}$.
+    \(H_{\mathrm{global}}\).
 
     Third, the model predicts distinct signatures in void-related observables,
     including redshift drift and weak lensing~\cite{Cai2017VoidLensing}.
@@ -179,28 +181,25 @@
 
     We emphasize that the present framework does not predict a unique numerical
     value for the offset in a given environment, but constrains its scaling and
-    sign once $a_\star$ is fixed.
+    sign once \(a_\star\) is fixed.
 
   \subsection{Predicted Amplitude and Redshift Dependence}
     \label{subsec:hubble_predictions}
 
     A key feature of the present framework is that the magnitude of the locally
-    inferred deviation from the global expansion rate is not an arbitrary
-    phenomenological choice.
-    Once the saturation scale $a_\star$ is fixed by galactic dynamics,
-    the expected environmental offset in the inferred Hubble constant is
-    constrained.
-
+    inferred deviation from the global expansion rate is constrained by the
+    saturation scale \(a_\star\).
     For representative underdensities characteristic of large cosmic voids on
     scales of a few hundred megaparsecs,
-    the framework generically allows for a fractional enhancement
+    the framework predicts a fractional enhancement
     \begin{equation}
       \frac{\Delta H}{H}
       \;\equiv\;
       \frac{H_{\mathrm{loc}} - H_{\mathrm{global}}}
       {H_{\mathrm{global}}}
       \;\sim\;
-      \text{a few percent} ,
+      \text{a few percent},
+      \label{eq:deltaH}
     \end{equation}
     comparable in magnitude to the observed discrepancy between local distance
     ladder measurements and early-universe inferences.
@@ -209,7 +208,7 @@
     At higher redshift, large-scale structure is less developed and line-of-sight
     averaging becomes increasingly efficient.
     As a result, the locally inferred expansion rate is expected to converge toward
-    $H_{\mathrm{global}}$ with increasing redshift.
+    \(H_{\mathrm{global}}\) with increasing redshift.
 
     Deviations well above the percent level or the complete absence of any measurable
     offset would directly challenge the proposed mechanism.
@@ -222,14 +221,14 @@
     It reflects a limitation of homogeneous kinematic inference when applied to a
     strongly inhomogeneous late-time Universe.
 
-    Early-universe determinations of $H_0$,
+    Early-universe determinations of \(H_0\),
     anchored in a nearly homogeneous background,
     recover the global expansion rate.
     By contrast, late-time local measurements probe structured environments in which
     the effective transition resolution operates in a low-density saturated regime.
 
     In this context, the discrepancy between early- and late-time determinations of
-    $H_0$ arises from a mismatch between global averaging and local inference.
+    \(H_0\) arises from a mismatch between global averaging and local inference.
     Measurements performed in void-dominated regions sample an effective response
     that no longer scales linearly with decreasing density,
     leading to a systematically enhanced locally inferred expansion rate.
@@ -239,7 +238,7 @@
     It is a diagnostic of gravitational and kinematic inference in diffuse
     environments.
     This interpretation naturally predicts weak but systematic correlations between
-    inferred values of $H_0$ and large-scale environmental indicators such as void
+    inferred values of \(H_0\) and large-scale environmental indicators such as void
     depth or filament membership.
 
   \subsection{Summary}
