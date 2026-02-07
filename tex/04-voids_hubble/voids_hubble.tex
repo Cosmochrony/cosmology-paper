@@ -49,7 +49,8 @@
     and typical gravitational accelerations fall below the saturation scale
     $a_\star$ over large volumes~\cite{Keenan2013KBC}.
 
-    In this regime, the effective description operates close to the effective resolution limit of the description.
+    In this regime, the effective description operates close to the limited descriptive resolution in low-density
+    environments.
     The relation between local kinematics and the underlying background expansion
     is therefore modified at the level of inference rather than dynamics.
     To leading order, this effect can be captured by an environment-dependent
@@ -58,11 +59,34 @@
       H_{\mathrm{loc}}
       =
       H_{\mathrm{global}}
-      \left( 1 + \delta_{\mathrm{eff}} \right) ,
+      \left[
+        1
+        +
+        \delta_\rho\,
+        f\!\left(
+             \frac{g_{\mathrm{void}}}{a_\star}
+      \right)
+      \right] ,
       \label{eq:hloc}
     \end{equation}
-    where $\delta_{\mathrm{eff}}$ is a positive correction that increases with the
-    degree of saturation.
+    Here
+    \(
+    \delta_\rho = 1 - \rho_{\mathrm{void}}/\rho_{\mathrm{global}}
+    \)
+    is the density contrast of the void,
+    and
+    \(
+    g_{\mathrm{void}} = G M_{\mathrm{void}} / R_{\mathrm{void}}^2
+    \)
+    is the characteristic gravitational field strength within the void.
+    The function \(f(x)\) is a dimensionless saturation function with the properties:
+    \begin{itemize}
+      \item \(f(x) \rightarrow 0\) for \(x \gg 1\) (unsaturated regime),
+      \item \(0 < f(x) < f_{\mathrm{max}}\) for \(x \ll 1\) (saturated regime),
+      \item \(f_{\mathrm{max}} \sim 0.1\), consistent with the observed amplitude of the Hubble tension.
+    \end{itemize}
+    The saturation scale \(a_\star\) is fixed independently by galaxy rotation curve data
+    (Section~\ref{subsec:universality}).
 
     The correction $\delta_{\mathrm{eff}}$ depends on the depth and spatial extent of
     the void, as well as on the characteristic saturation scale $a_\star$.
@@ -78,10 +102,10 @@
     reflects a reduced effective geometric constraint rather than an additional
     energy density.
     In regions where the density of contributing relational structure is low,
-    the effective projection onto a geometric description operates closer to its
+    the kinematic inference based on sparse mass distributions operates closer to its
     saturation limit.
-    This induces a local dilation of inferred metric relations,
-    which we refer to as a \emph{geometric relaxation offset}.
+    This induces a systematic environment-dependent bias in the locally inferred
+    kinematic relations.
 
   \subsection{Connection to the Hubble Tension}
     \label{subsec:hubble_tension}
@@ -170,7 +194,7 @@
     For representative underdensities characteristic of large cosmic voids on
     scales of a few hundred megaparsecs,
     the framework generically allows for a fractional enhancement
-  \begin{equation}
+    \begin{equation}
       \frac{\Delta H}{H}
       \;\equiv\;
       \frac{H_{\mathrm{loc}} - H_{\mathrm{global}}}
