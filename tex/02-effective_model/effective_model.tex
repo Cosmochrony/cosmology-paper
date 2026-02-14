@@ -5,12 +5,10 @@
   late-time gravitational phenomenology in low-density environments.
   The model is constructed to address galaxy rotation curves and the Hubble
   tension within a single unified description,
-  without modifying early-universe physics or invoking dark matter particles
-  in this effective regime.
+  without modifying early-universe physics or invoking dark matter particles in this effective regime.
 
   The emphasis is deliberately phenomenological.
-  Only the minimal assumptions required to reproduce the observed anomalies are
-  introduced.
+  Only the minimal assumptions required to reproduce the observed anomalies are introduced.
   The model is not presented as a fundamental theory of gravity,
   but as an effective description valid in specific environmental regimes.
 
@@ -25,158 +23,12 @@
   Saturation is interpreted as a limitation of this effective resolution.
   In low-density environments, the number of independent relations contributing
   to the gravitational response becomes bounded,
-  so that further decreases in density no longer translate into proportionally
-  stronger inferred dynamics.
-  As a result, the effective response approaches a plateau rather than vanishing
-  asymptotically.
+  so that further decreases in density no longer translate into proportionally stronger inferred dynamics.
+  As a result, the effective response approaches a plateau rather than vanishing asymptotically.
   The dynamical motivation for bounded-response regimes of this type is developed
   in a companion theoretical work~\cite{Beau2026c}.
 
-  \subsection{Minimal Assumptions and Domain of Validity}
-    \label{subsec:minimal_assumptions}
-
-    We assume that gravitational phenomenology at galactic and sub-cosmological
-    scales can be described by an effective potential $\Phi_{\mathrm{eff}}$,
-    used here as a convenient parametrization of kinematic inference rather than
-    as a fundamental dynamical field.
-    The framework satisfies the following requirements.
-
-    (i) The effective dynamics must reduce to standard Newtonian gravity in
-    high-density environments,
-    ensuring consistency with Solar System tests.
-    (ii) Deviations are allowed only in diffuse regimes,
-    characterized by low baryonic density or weak gravitational gradients.
-    (iii) The transition is governed by at most one additional universal scale
-    parameter $a_\star$,
-    with no environment-specific tuning.
-    (iv) Locality and isotropy are preserved at the effective level.
-
-    Mathematically, the framework shares the Lagrangian structure of the
-    quasi-linear MOND theories proposed by Bekenstein and Milgrom~\cite{Bekenstein1984}.
-    However, whereas MOND introduces this modification as a fundamental alteration
-    of the gravitational law,
-    the present approach interprets it as a saturated effective response.
-    The modification reflects a finite capacity of the effective description
-    to resolve increasingly dilute relational structure~\cite{Beau2026b}.
-
-    This conceptual shift is essential.
-    It allows the phenomenological success of MOND at galactic scales to be
-    reinterpreted as a regime of descriptive saturation,
-    rather than as a modification of gravity.
-    The same mechanism then applies naturally to volumetric density dilution
-    in cosmological voids.
-
-    The present framework is therefore not intended as a replacement for MOND
-    phenomenology.
-    It provides an interpretation of its low-acceleration successes
-    as an emergent effective limit within a broader descriptive structure.
-
-  \subsection{Effective Saturating Potential}
-    \label{subsec:effective_potential}
-
-    We define the effective gravitational potential $\Phi_{\mathrm{eff}}$ through a
-    modified Poisson equation of the form
-    \begin{equation}
-      \nabla \cdot \left[
-                     \mu\!\left( \frac{|\nabla \Phi_{\mathrm{eff}}|}{a_\star} \right)
-                     \nabla \Phi_{\mathrm{eff}}
-      \right]
-      =
-      4 \pi G \rho_{\mathrm{b}} ,
-      \label{eq:modified_poisson}
-    \end{equation}
-    where $\rho_{\mathrm{b}}$ denotes the baryonic mass density
-    and $\mu(x)$ encodes the saturation of the effective response.
-
-    For clarity, we work primarily with the $\mu$-formulation in
-    Eq.~\eqref{eq:modified_poisson}.
-    An equivalent algebraic form is sometimes written using an interpolation
-    function $\nu(y)$ defined by $g_{\mathrm{eff}} = \nu(y) g_{\mathrm{N}}$
-    with $y = g_{\mathrm{N}}/a_\star$.
-    In that notation, $\nu(y) \rightarrow 1$ for $y \gg 1$,
-    ensuring an exactly Newtonian limit.
-
-    In the present interpretation, $\mu(x)$ does not represent a fundamental
-    field-dependent coupling.
-    It parametrizes the progressive saturation of the effective response
-    as the underlying transition structure approaches its maximal resolvable rate.
-    The specific functional form adopted here provides a minimal interpolation
-    between regimes and is not intended as a fundamental law.
-
-    The function $\mu(x)$ satisfies the limiting behaviors
-    \begin{equation}
-      \mu(x) \rightarrow 1 \quad \text{for} \quad x \gg 1 ,
-    \end{equation}
-    and
-    \begin{equation}
-      \mu(x) \rightarrow x \quad \text{for} \quad x \ll 1 .
-    \end{equation}
-
-    We assume $\mu(x)$ to be positive, monotone increasing, and at least $C^{1}$,
-    so that $\Phi_{\mathrm{eff}}$ and its first derivatives remain continuous
-    across the transition.
-    This regularity avoids spurious discontinuities in the effective force
-    and ensures stable orbital dynamics.
-
-    In the high-acceleration regime,
-    Eq.~\eqref{eq:modified_poisson} reduces to the standard Poisson equation.
-    In the low-acceleration or diffuse regime,
-    the effective response saturates,
-    leading to a finite asymptotic acceleration.
-
-    For spherically symmetric systems,
-    the effective radial acceleration $g_{\mathrm{eff}}(r)$ satisfies
-    \begin{equation}
-      \mu\!\left( \frac{g_{\mathrm{eff}}}{a_\star} \right)
-      g_{\mathrm{eff}}
-      =
-      g_{\mathrm{N}} ,
-      \label{eq:effective_acceleration}
-    \end{equation}
-    where $g_{\mathrm{N}}$ is the Newtonian acceleration sourced by baryons alone.
-
-    Equation~\eqref{eq:effective_acceleration} yields asymptotically flat rotation
-    curves for isolated galaxies with finite baryonic mass.
-    The transition scale $a_\star$ controls both the onset of flattening
-    and the amplitude of the asymptotic velocity.
-
-    Importantly, $a_\star$ is treated as a universal parameter.
-    No halo-by-halo fitting or galaxy-dependent adjustment is introduced.
-    All diversity in rotation curve shapes arises from the observed baryonic
-    distributions.
-    In this work, $a_\star$ is interpreted as a minimal resolvable acceleration
-    within the effective description,
-    reflecting an intrinsic bound on the transition rate
-    of the geometric response.
-
-  \subsection{Environmental Dependence and Low-Density Regimes}
-    \label{subsec:environment}
-
-    The effective modification introduced above is intrinsically sensitive to the
-    gravitational environment.
-    Regions of low baryonic density or weak gravitational gradients
-    probe the saturated regime most strongly.
-
-    This environmental dependence becomes critical at cosmological scales.
-    Cosmic voids, characterized by extreme matter dilution,
-    naturally sample the deep saturation regime.
-    As a result, local kinematic measurements performed in void-dominated regions
-    may exhibit systematic offsets relative to globally inferred expansion rates.
-
-    Within this framework, the Hubble tension is not interpreted
-    as a failure of early-universe cosmology.
-    It arises as a late-time inference bias,
-    reflecting the use of a single spacetime-based parametrization
-    across environments characterized by different effective resolutions.
-
-    Galaxy rotation curves and the Hubble tension therefore emerge
-    as two manifestations of the same low-density phenomenology.
-    Galaxies probe saturation radially through declining surface density,
-    while cosmic voids probe it volumetrically through large-scale dilution.
-    The identification of a single scale $a_\star$
-    accounting for both effects constitutes the central organizing principle of this effective description.
-
-    The following sections test this effective framework
-    against galactic rotation curve data
-    and explore its implications for local measurements
-    of the Hubble constant.
+  \input{02-effective_model/001-minimal_assumptions}
+  \input{02-effective_model/002-effective_potential}
+  \input{02-effective_model/003-environment}
+  \input{02-effective_model/004-operational_saturation_scale}
