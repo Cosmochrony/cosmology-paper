@@ -1,0 +1,38 @@
+\subsection{Scaling Analysis of the Projective Gap}
+  \label{subsec:scaling_projective_gap}
+
+  The inevitability of saturation can be established through a simple
+  scaling argument.
+  Let the update demand scale as
+  \begin{equation}
+    D(R) \propto R^{-3/2},
+  \end{equation}
+  as dictated by the free-fall timescale.
+
+  The projective capacity is limited by the maximal admissible throughput
+  under the invariant bound~$b_{\chi}$.
+  Denote by $C(R)$ the total admissible update capacity within a region
+  of size~$R$.
+  Without assuming a specific geometric postulate, we parametrize
+  \begin{equation}
+    C(R) \propto R^{n},
+  \end{equation}
+  where $n \ge 0$ encodes the effective growth of independent relational
+  channels permitted by the mapping~$\Pi$ at the epoch considered.
+
+  The projective stress ratio behaves as
+  \begin{equation}
+    \Xi(R) = \frac{D(R)}{C(R)} \propto R^{-(3/2+n)}.
+  \end{equation}
+  For any physically reasonable $n \ge 0$, the ratio diverges as
+  $R \rightarrow 0$.
+  This guarantees the existence of a finite contraction scale
+  $R_{\mathrm sat}$ at which $\Xi \sim 1$.
+  Beyond this point, the demanded update rate exceeds the admissible
+  projective throughput.
+
+  The result is robust with respect to the precise value of~$n$.
+  Even if capacity scaled volumetrically ($n=3$), the divergence would
+  remain unavoidable.
+  Saturation during sufficiently deep collapse is therefore a structural
+  feature of the framework rather than a model-dependent artifact.
