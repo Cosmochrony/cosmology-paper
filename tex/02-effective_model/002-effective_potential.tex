@@ -1,15 +1,15 @@
 \subsection{Effective Saturating Potential}
   \label{subsec:effective_potential}
 
-  The field equation introduced below is mathematically identical to
-  the quasi-linear MOND formulation in the deep galactic regime.
-  Here, this structure is not postulated as a fundamental modification of gravity.
-  Rather, we argue that the empirical MOND phenomenology emerges
-  as the effective low-density limit of a more general saturation
-  principle governing kinematic inference.
+  The field equation introduced below is formally identical to the
+  quasi-linear MOND formulation in the deep galactic regime.
+  In the present work, however, this structure is not postulated as a
+  fundamental modification of gravity.
+  Instead, we adopt it as a minimal effective parametrization of a
+  bounded-response principle governing low-density kinematic inference.
 
-  We define the effective gravitational potential $\Phi_{\mathrm{eff}}$ through a
-  modified Poisson equation of the form
+  We define the effective gravitational potential $\Phi_{\mathrm{eff}}$ through
+  the nonlinear Poisson equation
   \begin{equation}
     \nabla \cdot \left[
                    \mu\!\left( \frac{|\nabla \Phi_{\mathrm{eff}}|}{a_\star} \right)
@@ -19,47 +19,39 @@
     4 \pi G \rho_{\mathrm{b}} ,
     \label{eq:modified_poisson}
   \end{equation}
-  where $\rho_{\mathrm{b}}$ denotes the baryonic mass density
-  and $\mu(x)$ encodes the saturation of the effective response.
+  where $\rho_{\mathrm{b}}$ denotes the baryonic mass density.
+  The function $\mu(x)$ encodes the progressive saturation of the effective
+  response as the acceleration falls below the characteristic scale $a_\star$.
 
   For clarity, we work primarily with the $\mu$-formulation in
   Eq.~\eqref{eq:modified_poisson}.
-  An equivalent algebraic form is sometimes written using an interpolation
-  function $\nu(y)$ defined by $g_{\mathrm{eff}} = \nu(y) g_{\mathrm{N}}$
-  with $y = g_{\mathrm{N}}/a_\star$.
-  In that notation, $\nu(y) \rightarrow 1$ for $y \gg 1$,
+  An equivalent algebraic representation may be written in terms of an
+  interpolation function $\nu(y)$ defined by
+  $g_{\mathrm{eff}} = \nu(y) g_{\mathrm{N}}$ with
+  $y = g_{\mathrm{N}}/a_\star$,
+  where $\nu(y) \rightarrow 1$ for $y \gg 1$,
   ensuring an exactly Newtonian limit.
 
-  In the present interpretation, $\mu(x)$ does not represent a fundamental
-  field-dependent coupling.
-  It parametrizes the progressive saturation of the effective response
-  as the underlying transition structure approaches its maximal resolvable rate.
-  The specific functional form adopted here provides a minimal interpolation
-  between regimes and is not intended as a fundamental law.
+  In the present interpretation, $\mu(x)$ does not represent a
+  field-dependent coupling in the fundamental action.
+  Rather, it parametrizes the smooth onset of a bounded-response regime
+  in the effective description.
+  The specific functional form adopted here provides a minimal
+  interpolation between regimes and is not assumed to be unique.
 
-  The function $\mu(x)$ satisfies the limiting behaviors
+  The function $\mu(x)$ satisfies
   \begin{equation}
     \mu(x) \rightarrow 1 \quad \text{for} \quad x \gg 1 ,
   \end{equation}
   and
   \begin{equation}
-    \mu(x) \rightarrow x \quad \text{for} \quad x \ll 1 .
+    \mu(x) \rightarrow x \quad \text{for} \quad x \ll 1 ,
   \end{equation}
-
-  We assume $\mu(x)$ to be positive, monotone increasing, and at least $C^{1}$,
-  so that $\Phi_{\mathrm{eff}}$ and its first derivatives remain continuous
-  across the transition.
-  This regularity avoids spurious discontinuities in the effective force
-  and ensures stable orbital dynamics.
-
-  In the high-acceleration regime,
-  Eq.~\eqref{eq:modified_poisson} reduces to the standard Poisson equation.
-  In the low-acceleration or diffuse regime,
-  the effective response saturates,
-  leading to a finite asymptotic acceleration.
+  ensuring recovery of Newtonian dynamics at high acceleration
+  and asymptotically flat rotation curves at low acceleration.
 
   For spherically symmetric systems,
-  the effective radial acceleration $g_{\mathrm{eff}}(r)$ satisfies
+  the effective radial acceleration satisfies
   \begin{equation}
     \mu\!\left( \frac{g_{\mathrm{eff}}}{a_\star} \right)
     g_{\mathrm{eff}}
@@ -67,18 +59,15 @@
     g_{\mathrm{N}} ,
     \label{eq:effective_acceleration}
   \end{equation}
-  where $g_{\mathrm{N}}$ is the Newtonian acceleration sourced by baryons alone.
+  where $g_{\mathrm{N}}$ is sourced solely by baryons.
 
-  Equation~\eqref{eq:effective_acceleration} yields asymptotically flat rotation
-  curves for isolated galaxies with finite baryonic mass.
+  Equation~\eqref{eq:effective_acceleration} reproduces the observed
+  flattening of galaxy rotation curves without introducing dark halos.
   The transition scale $a_\star$ controls both the onset of flattening
-  and the amplitude of the asymptotic velocity.
+  and the asymptotic velocity amplitude.
 
-  Importantly, $a_\star$ is treated as a universal parameter.
-  No halo-by-halo fitting or galaxy-dependent adjustment is introduced.
-  All diversity in rotation curve shapes arises from the observed baryonic
-  distributions.
-  In this work, $a_\star$ is interpreted as a minimal resolvable acceleration
-  within the effective description,
-  reflecting an intrinsic bound on the transition rate
-  of the geometric response.
+  Crucially, $a_\star$ is not treated as a tunable per-galaxy parameter.
+  It is determined globally from the full rotation-curve sample
+  (Section~\ref{subsec:universality}),
+  and is interpreted here as the characteristic acceleration at which
+  the effective geometric response enters a bounded regime.
