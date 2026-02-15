@@ -3,12 +3,14 @@
 
   Cosmic voids represent the deepest and most extended low-density regions in the late Universe.
   Within voids, baryonic and total matter densities are strongly suppressed,
-  and typical gravitational accelerations fall below the saturation scale $a_\star$ over large volumes~\cite{Keenan2013KBC}.
+  and typical gravitational accelerations fall below the saturation scale $a_\star$
+  over large volumes~\cite{Keenan2013KBC}.
 
-  In this regime, the effective description operates close to the limited descriptive
-  resolution in low-density environments.
+  In this regime, the effective description operates close to its
+  low-density saturation limit.
   The relation between local kinematics and the underlying background expansion
-  is therefore modified at the level of inference rather than dynamics.
+  is therefore modified at the level of inference rather than at the level of
+  the dynamical Friedmann equations.
   To leading order, this effect can be captured by an environment-dependent
   renormalization of the inferred expansion rate,
   \begin{equation}
@@ -19,47 +21,65 @@
       1
       +
       \delta_{\mathrm{eff}}
-    \right] ,
+    \right],
     \quad \text{with} \quad
-    \delta_{\mathrm{eff}} = \delta_\rho \cdot f\!\left(
-                                                   \frac{g_{\mathrm{void}}}{a_\star}
+    \delta_{\mathrm{eff}}
+    =
+    \delta_\rho \,
+    f\!\left(
+         \frac{g_{\mathrm{void}}}{a_\star}
     \right),
     \label{eq:hloc}
   \end{equation}
   where
-  \(\delta_\rho = 1 - \rho_{\mathrm{void}}/\rho_{\mathrm{global}}\)
-  is the density contrast of the void,
+  $\delta_\rho = 1 - \rho_{\mathrm{void}}/\rho_{\mathrm{global}}$
+  denotes the density contrast of the void,
+  and $g_{\mathrm{void}}$ represents a characteristic gravitational
+  acceleration scale associated with the void,
+  estimated from its typical size and density contrast.
+
+  The function $f(x)$ is a dimensionless saturation function
+  determined by the same bounded-response structure that governs
+  galactic dynamics.
+  In the deep saturated regime ($x \ll 1$),
+  $f(x)$ approaches a finite asymptotic value $f_{\max}$,
+  set by the maximal projection deficit allowed by the effective description.
+  Independent constraints derived in Section~4.3 of~\cite{Beau2026c}
+  imply $f_{\max} \lesssim 0.1$.
+
+  The saturation scale $a_\star$ entering Eq.~\eqref{eq:hloc}
+  is fixed independently from galactic rotation curves
+  (Section~\ref{subsec:universality}),
+  and no cosmological parameter enters its determination.
+
+  For void density contrasts in the observationally inferred range
+  $\delta_\rho \sim 0.2$--$0.4$~\cite{Keenan2013KBC},
+  and for $g_{\mathrm{void}} \ll a_\star$,
+  Eq.~\eqref{eq:hloc} yields a characteristic fractional shift
+  $\Delta H/H$ at the few-percent level.
+  This magnitude is comparable to the observed local offset,
+  without requiring any tuning of cosmological parameters.
+
+  The magnitude of the effect therefore follows directly from combining
+  (i) the empirically determined scale $a_\star$,
   and
-  \(g_{\mathrm{void}} = G M_{\mathrm{void}} / R_{\mathrm{void}}^2\)
-  is the characteristic gravitational field strength within the void.
-  The function \(f(x)\) is a dimensionless saturation function with the properties:
-  \begin{itemize}
-    \item \(f(x) \rightarrow 0\) for \(x \gg 1\) (unsaturated regime),
-    \item \(0 < f(x) < f_{\mathrm{max}}\) for \(x \ll 1\) (saturated regime),
-    \item \(f_{\mathrm{max}} \lesssim 0.1\), reflecting the maximal projection deficit in deep voids
-    (Section 4.3 of~\cite{Beau2026c}).
-  \end{itemize}
+  (ii) independently measured void density contrasts.
 
-  The saturation scale $a_\star$ entering Eq.~\eqref{eq:hloc} is fixed independently from galactic rotation curves
-  (Section~\ref{subsec:universality}), and no cosmological quantity enters its determination.
-
-  For typical void parameters (\(\delta_\rho \approx 0.3\), \(g_{\mathrm{void}} \ll a_\star\)),
-  Eq.~\eqref{eq:hloc} predicts \(\Delta H/H\) of order a few percent.
-  For plausible values of \(f_{\mathrm{max}}\), this corresponds to \(\Delta H/H \sim 0.03\)--\(0.08\),
-  comparable in magnitude to the observed local offset~\cite{Riess2022SH0ES}.
-
-  The correction \(\delta_{\mathrm{eff}}\) depends on the depth and spatial extent of
-  the void, as well as on the empirically determined saturation scale \(a_\star\).
+  The correction $\delta_{\mathrm{eff}}$ depends on the depth and spatial extent
+  of the void, as well as on the empirically determined saturation scale
+  $a_\star$.
   Denser or more weakly underdense regions remain close to the unsaturated regime
-  and yield \(\delta_{\mathrm{eff}} \approx 0\).
+  and yield $\delta_{\mathrm{eff}} \approx 0$.
 
-  Importantly, this mechanism does not require any additional energy component
-  or modification of the background Friedmann equations.
+  Importantly, this mechanism does not introduce any additional energy component
+  and does not modify the background Friedmann equations.
   The global expansion history remains unchanged.
-  Only the local inference of the expansion rate is affected.
+  Only the local kinematic inference of the expansion rate is affected.
 
   Within this interpretation, the enhanced expansion inferred in cosmic voids
-  reflects a reduced effective geometric constraint rather than an additional energy density.
+  reflects a reduced effective geometric constraint rather than an additional
+  energy density.
   In regions where the density of contributing relational structure is low,
-  the kinematic inference based on sparse mass distributions operates closer to its saturation limit.
-  This induces a systematic environment-dependent bias in the locally inferred kinematic relations.
+  the kinematic inference based on sparse mass distributions operates closer
+  to its saturation limit, inducing a systematic environment-dependent bias
+  in locally inferred kinematic relations.
