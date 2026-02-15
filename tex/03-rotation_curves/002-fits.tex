@@ -1,10 +1,10 @@
 \subsection{Representative Fits}
   \label{subsec:fits}
 
-  Figure references are deferred to Appendix~D, where the full set of numerical
-  fits is presented.
-  Here we summarize the qualitative behavior observed across representative
-  galaxies.
+  We illustrate the performance of the effective model on representative
+  galaxies spanning different surface-density regimes.
+  The goal is not to emphasize isolated best cases, but to show typical
+  behaviors observed across the full SPARC sample.
 
   High-surface-density galaxies are well described by Newtonian dynamics in
   their inner regions.
@@ -26,19 +26,24 @@
   distribution and surface density, not from variations in the effective
   parameters.
 
-  \begin{figure}[t]
+  The galaxies shown in Fig.~\ref{fig:rotation-curves} are selected as
+  representative well-fitted systems spanning rising, nearly flat,
+  and slowly declining rotation curves.
+  The saturation scale $a_\star$ is fixed globally from the full-sample
+  analysis discussed in Section~\ref{subsec:universality}.
+  No galaxy-dependent adjustment of $a_\star$ is performed.
+
+  \begin{figure}
     \centering
-    \includegraphics[width=\linewidth]{03-rotation_curves/galaxy_rotcurves_3panel}
+    \includegraphics[width=\linewidth]{03-rotation_curves/galaxy_rotcurves_showcase}
     \caption[Representative SPARC rotation curves]{
       Representative galaxy rotation curves from the SPARC sample.
       Observed circular velocities (points) are compared with the effective model
       prediction (solid lines) computed from the baryonic mass distribution alone.
-      Left: NGC~3198 (nearly flat).
-      Centre: NGC~2403 (rising).
-      Right: NGC~5055 (mildly declining).
-      The same universal saturation scale $a_\star$,
-      calibrated from the full SPARC sample (Section~\ref{subsec:universality}),
-      is used for all systems.
+      The three systems span distinct surface-density regimes and kinematic
+      behaviors (rising, nearly flat, and mildly declining).
+      A single universal saturation scale $a_\star$, determined from the full
+      sample, is used for all galaxies.
       The only galaxy-dependent parameter is the stellar mass-to-light ratio
       $\Upsilon_\star$, fitted within a physically motivated interval.
       The code used to generate these curves is publicly available
