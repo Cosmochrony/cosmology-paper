@@ -76,6 +76,60 @@
   The global expansion history remains unchanged.
   Only the local kinematic inference of the expansion rate is affected.
 
+  \paragraph{Order-of-magnitude estimate.}
+    A minimal numerical closure follows from estimating the characteristic void acceleration
+    at radius $R_{\mathrm{void}}$ from the enclosed mass deficit,
+    \begin{equation}
+      g_{\mathrm{void}}
+      \sim \frac{4\pi}{3}\,G\,\rho_m\,\delta_\rho\,R_{\mathrm{void}},
+      \label{eq:gvoid_estimate}
+    \end{equation}
+    with $\rho_m = 3H_0^2\Omega_m/(8\pi G)$, hence
+    \begin{equation}
+      g_{\mathrm{void}}
+      \sim \frac{1}{2}\,\Omega_m\,H_0^2\,\delta_\rho\,R_{\mathrm{void}}.
+      \label{eq:gvoid_estimate_simplified}
+    \end{equation}
+    Taking a representative large void $R_{\mathrm{void}} \sim 100$--$200\,\mathrm{Mpc}$
+    and $\delta_\rho \sim 0.2$--$0.4$~\cite{Keenan2013KBC} gives
+    $g_{\mathrm{void}} \sim (0.5$--$2)\times 10^{-12}\,\mathrm{m\,s^{-2}}$.
+    The saturation scale fixed by rotation curves is
+    $a_\star \simeq 2.4\times 10^{3}\,(\mathrm{km\,s^{-1}})^2\,\mathrm{kpc^{-1}}$
+    (Section~\ref{subsec:universality}), i.e.
+    $a_\star \simeq 7.8\times 10^{-11}\,\mathrm{m\,s^{-2}}$,
+    so $g_{\mathrm{void}}/a_\star \lesssim 3\times 10^{-2} \ll 1$.
+    The deep-saturation limit therefore applies and
+    Eq.~\eqref{eq:hloc} reduces to
+    \begin{equation}
+      \frac{\Delta H}{H}
+      \equiv
+      \delta_{\mathrm{eff}}
+      \simeq
+      \delta_\rho\,f_{\max},
+      \label{eq:dH_over_H_saturated}
+    \end{equation}
+    yielding $\Delta H/H \sim 0.01$--$0.04$ for $\delta_\rho \sim 0.2$--$0.4$
+    and $f_{\max} \lesssim 0.1$.
+
+    For orientation, we indicate as a shaded benchmark band the typical fractional offset
+    discussed in the Hubble-constant literature~\cite{Riess2022SH0ES,Planck2020,Verde2019Review}.
+
+  \begin{figure}
+      \centering
+      \includegraphics[width=0.95\columnwidth]{04-voids_hubble/dH_over_H_vs_delta_rho}
+      \caption{Quantitative visualization of the void inference bias implied by
+      Eq.~\protect\eqref{eq:hloc} in the deep-saturation regime
+        ($g_{\mathrm{void}} \ll a_\star$), where
+        $f(g_{\mathrm{void}}/a_\star) \to f_{\max}$ and
+        $\Delta H/H \simeq \delta_\rho f_{\max}$
+        (Eq.~\protect\eqref{eq:dH_over_H_saturated}).
+        Curves show representative values $f_{\max}=0.05$ and $f_{\max}=0.10$,
+        consistent with the independent bound discussed in the text.
+        The shaded band indicates a typical late-time versus early-time fractional offset
+        shown only as a visual benchmark and not used for any calibration or fit.}
+      \label{fig:dH_over_H_vs_delta_rho}
+    \end{figure}
+
   Within this interpretation, the enhanced expansion inferred in cosmic voids
   reflects a reduced effective geometric constraint rather than an additional
   energy density.
