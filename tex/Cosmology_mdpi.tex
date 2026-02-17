@@ -1,0 +1,123 @@
+\documentclass[universe,article,submit,pdftex,moreauthors]{Definitions/mdpi}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{tikz}
+\usepackage{amsopn}
+\usepackage{amstext}
+\usepackage{microtype}
+\usepackage{xparse}
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+% Boxes
+\usepackage[most]{tcolorbox}
+% Plots (pgfplots provides axis/addplot)
+\usepackage{pgfplots}
+\usetikzlibrary{intersections}
+\usepgfplotslibrary{fillbetween}
+\pgfplotsset{compat=1.18}
+\NewDocumentCommand{\subsubsubsection}{s m}{%
+  \IfBooleanTF{#1}{\paragraph*{#2}}{\paragraph{#2}}%
+}
+\usetikzlibrary
+{arrows.meta, calc, fit, decorations.pathmorphing, decorations.pathreplacing, shapes.geometric, shadings, positioning,
+  decorations.markings, patterns}
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+\firstpage{1}
+\setcounter{page}{\@firstpage}
+\pubvolume{1}
+\issuenum{1}
+\articlenumber{0}
+\pubyear{2026}
+\copyrightyear{2026}
+\datereceived{ }
+\daterevised{ } % Comment out if no revised date
+\dateaccepted{ }
+\datepublished{ }
+\doinum{}
+
+\Title{A Unified Effective Mechanism for Galaxy Rotation Curves and the Hubble Tension}
+
+\newcommand{\orcidauthorA}{0009-0001-7697-7868}
+
+\Author{Jerome Beau$^{1,*}$}
+
+\AuthorNames{Jerome Beau}
+
+\address{%
+  \quad Independent Researcher, France; jerome.beau@cosmochrony.org}
+
+\corres{Correspondence: jerome.beau@cosmochrony.org}
+
+\abstract{We investigate whether two long-standing observational anomalies---flat galaxy
+  rotation curves and the Hubble constant tension---may originate from a common
+  effective mechanism operating in low-density environments.
+  We introduce a minimal phenomenological framework in which departures from
+  Newtonian expectations arise from a saturation of the effective gravitational
+  response at the level of kinematic inference, without invoking dark matter
+  particles or altering early-universe cosmology.
+  In the galactic regime, the well-known MOND phenomenology emerges as the
+  low-density limit of this bounded-response framework, rather than as a
+  fundamental modification of gravity.
+  The framework reduces to standard Newtonian behavior in high-density regimes
+  and introduces a smooth, bounded effective response in diffuse environments.
+  Applied to galactic dynamics, this approach reproduces the main features of
+  observed rotation curves across a wide range of galaxy types using baryonic
+  matter alone, with stable parameter values and no halo-by-halo tuning.
+  Explicit numerical comparisons with representative galaxies from the SPARC
+  sample show that the effective saturation scale naturally correlates with
+  observed surface-density-dependent trends.
+  At cosmological scales, the same effective mechanism predicts
+  environment-dependent deviations in the locally inferred expansion rate.
+  For typical void density contrasts, an explicit order-of-magnitude estimate
+  shows that the deep-saturation regime applies, yielding a fractional shift
+  $\Delta H/H \simeq \delta_\rho f_{\max}$ without introducing any new
+  cosmological degree of freedom.
+  Cosmic voids therefore provide a natural setting for a systematic offset
+  between local and global measurements of the Hubble constant, while
+  preserving the background expansion history.
+  We examine robustness, degeneracies with standard astrophysical effects, and
+  limitations of the effective description, and we outline distinctive
+  observational signatures, including environment-dependent redshift drift and
+  weak lensing effects.
+  The results suggest that galaxy rotation curves and the Hubble tension may
+  reflect a shared low-density phenomenology, testable with current and
+  forthcoming observations.}
+
+\keyword{cosmology; galaxy rotation curves; Hubble tension; modified gravity; voids}
+
+\providecommand{\bibcommenthead}{}
+\begin{document}
+
+  \input{01-introduction/introduction}
+  \input{02-effective_model/effective_model}
+  \input{03-rotation_curves/rotation_curves}
+  \input{04-voids_hubble/voids_hubble}
+  \input{05-robustness/robustness}
+  \input{06-predictions/predictions}
+  \input{07-conclusion/conclusion}
+
+  \section*{Data Availability}
+
+    The galaxy rotation-curve data used in this work are drawn from the publicly available
+    SPARC database~\cite{Lelli2016SPARC}.
+
+    The numerical code used to generate the galaxy rotation-curve figures and associated
+    diagnostics is openly available and archived with a persistent identifier.
+    The version used in this work is available via Zenodo at
+    \url{https://doi.org/10.5281/zenodo.18462369}~\cite{CosmochronySimulation}.
+
+    \acknowledgments{The author acknowledges the use of large language models as an editorial and analytical assistant during manuscript
+    preparation, including help with phrasing alternatives, consistency checks, and structured rewriting.
+    All scientific claims, modelling choices, numerical results, and interpretations are the sole responsibility of the
+    author.}
+
+    \conflictsofinterest{The author declares no conflicts of interest.}
+
+    \reftitle{References}
+    \bibliography{references}
+
+\end{document}
