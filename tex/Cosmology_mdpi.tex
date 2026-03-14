@@ -25,6 +25,7 @@
   decorations.markings, patterns}
 \theoremstyle{remark}
 \newtheorem*{remark}{Remark}
+\theoremstyle{definition}
 
 \firstpage{1}
 \setcounter{page}{\@firstpage}
@@ -82,6 +83,7 @@ effective gravitational response at the level of kinematic inference,
 \keyword{cosmology; galaxy rotation curves; Hubble tension; modified gravity; voids}
 
 \providecommand{\bibcommenthead}{}
+
 \begin{document}
 
   \input{01-introduction/introduction}
@@ -92,25 +94,27 @@ effective gravitational response at the level of kinematic inference,
   \input{06-predictions/predictions}
   \input{07-conclusion/conclusion}
 
-  \section*{Data Availability}
+  \appendix
+  \input{A-cosmo_resolution_proof}
 
+  \dataavailability{%
     The galaxy rotation-curve data used in this work are drawn from the publicly available
     SPARC database~\cite{Lelli2016SPARC}.
-
     The numerical code used to generate the galaxy rotation-curve figures and associated
     diagnostics is openly available and archived with a persistent identifier.
     The version used in this work is available via Zenodo at
-    \url{https://doi.org/10.5281/zenodo.18462369}~\cite{CosmochronySimulation}.
+    \url{https://doi.org/10.5281/zenodo.18462369}~\cite{CosmochronySimulation}.%
+  }
 
-    \acknowledgments
-    {The author acknowledges the use of large language models as an editorial and analytical assistant during manuscript
-    preparation, including help with phrasing alternatives, consistency checks, and structured rewriting.
-    All scientific claims, modelling choices, numerical results, and interpretations are the sole responsibility of the
-    author.}
+  \acknowledgments
+  {The author acknowledges the use of large language models as an editorial and analytical assistant during manuscript
+  preparation, including help with phrasing alternatives, consistency checks, and structured rewriting.
+  All scientific claims, modelling choices, numerical results, and interpretations are the sole responsibility of the
+  author.}
 
-    \conflictsofinterest{The author declares no conflicts of interest.}
+  \conflictsofinterest{The author declares no conflicts of interest.}
 
-    \reftitle{References}
-    \bibliography{references}
+  \reftitle{References}
+  \bibliography{references}
 
 \end{document}

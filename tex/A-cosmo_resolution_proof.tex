@@ -1,0 +1,125 @@
+\newcounter{defctr}[section]
+\renewcommand{\thedefctr}{\thesection.\arabic{defctr}}
+
+\section{Cosmological Operational Closure and the Scale $\ell = c/H$}
+  \label{app:cosmo_resolution}
+
+  This appendix derives Eq.~\eqref{eq:ell_cosmo} used in Section~\ref{subsec:cosmo_resolution}.
+  The derivation relies solely on the operational closure axiom and the
+  homogeneous saturated kinematics of the projected state.
+  No geometric horizon concept is invoked.
+
+  \subsection{A.1 Operational closure and descriptive resolution}
+    \label{subsec:operational-closure}
+
+    \refstepcounter{defctr}\label{def:ell_closure}
+    \noindent\textbf{Definition~\thedefctr\ (Operational closure and descriptive resolution).}
+    The descriptive resolution $\ell$ is the minimal coarse-graining neighbourhood such that the update of the
+    projected state $U$ at epoch $t$ depends on all substrate channels that can influence the update within a
+    single admissible step, and on no others.
+    \par\medskip
+
+    \noindent By definition~\ref{def:ell_closure}, the descriptive resolution $\ell$
+    is the minimal coarse-graining neighbourhood such that the update of the
+    projected state $U$ at epoch $t$ depends on all substrate channels that can
+    influence the update within a single admissible step, and on no others.
+
+    Closure therefore requires two properties:
+
+    \begin{enumerate}
+      \item Completeness: all admissible influences must be included.
+      \item Minimality: no inadmissible or causally irrelevant regions are included.
+    \end{enumerate}
+
+  \subsection{Homogeneous saturated kinematics}
+    \label{subsec:homogeneous-saturated-kinematics}
+
+    In the homogeneous late-time regime,
+    \begin{equation}
+      D_{\mathrm{loc}}\chi_{\mathrm{eff}} = c,
+    \end{equation}
+    so propagation of relational influence is bounded by $c$.
+
+    The projected state evolves according to
+    \begin{equation}
+      H(t) = \frac{\dot{\chi}}{\chi}.
+    \end{equation}
+
+    In a homogeneous regime, $H(t)$ is the unique intrinsic dimensionless rate.
+    The characteristic update time is therefore
+    \begin{equation}
+      \tau(t) \sim \left(\frac{\dot{\chi}}{\chi}\right)^{-1} = H(t)^{-1}.
+    \end{equation}
+
+    This is not imposed externally.
+    It follows from the requirement that an update corresponds to an
+    order-one change of the dimensionless global state variable.
+
+  \subsection{Influence domain and lower bound}
+    \label{subsec:influence-domain-and-lower-bound}
+
+    Within one update step of duration $\tau(t)$, the maximal
+    propagation distance of relational influence is
+    \begin{equation}
+      r_{\mathrm{max}} = c \tau(t) = \frac{c}{H(t)}.
+    \end{equation}
+
+    Any substrate configuration at distance $r \le r_{\mathrm{max}}$
+    can influence the projected state within the update step.
+    Excluding such configurations from the coarse-graining neighbourhood
+    would violate completeness of closure.
+
+    Therefore,
+    \begin{equation}
+      \ell \ge \frac{c}{H(t)}.
+    \end{equation}
+
+  \subsection{Minimality and upper bound}
+    \label{subsec:minimality-and-upper-bound}
+
+    Conversely, any configuration at distance $r > r_{\mathrm{max}}$
+    cannot influence the update within the admissible step.
+
+    Including such regions in the neighbourhood does not modify the update
+    map of $U$, but enlarges the coarse-graining domain beyond the minimal
+    operationally closed set.
+
+    Minimality of closure therefore requires
+    \begin{equation}
+      \ell \le \frac{c}{H(t)}.
+    \end{equation}
+
+  \subsection{Uniqueness of the homogeneous resolution}
+    \label{subsec:uniqueness-of-the-homogeneous-resolution}
+
+    Combining the bounds yields
+    \begin{equation}
+      \ell_{\mathrm{cosmo}}(t) = \frac{c}{H(t)}.
+    \end{equation}
+
+    No additional scale is available in the homogeneous regime.
+    Any alternative choice $\ell = f(H)$ would either violate dimensional
+    consistency or introduce an extraneous parameter, contradicting
+    the ontological minimality of the framework.
+
+  \subsection{Consequence for the saturation scale}
+    \label{subsec:consequence-for-the-saturation-scale}
+
+    Substituting into
+    \begin{equation}
+      a_\star(t) \sim \kappa \frac{b_\chi}{\ell(t)}
+    \end{equation}
+    gives
+    \begin{equation}
+      a_\star(t) \sim \kappa\, b_\chi \frac{H(t)}{c}.
+    \end{equation}
+
+    In projectable regimes $b_\chi \to c$, yielding
+    \begin{equation}
+      a_\star(t) \sim \kappa\, c H(t).
+    \end{equation}
+
+    This establishes a structural link between the galactic
+    saturation scale and the cosmological expansion rate.
+    The normalization factor $\kappa$ is fixed independently by the
+    $\mathrm{U}(1)$ holonomy condition discussed in Section~\ref{subsec:holonomy_normalization}.
