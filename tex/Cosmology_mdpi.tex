@@ -1,0 +1,126 @@
+\documentclass[universe,article,submit,pdftex,moreauthors]{Definitions/mdpi}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{tikz}
+\usepackage{amsopn}
+\usepackage{amstext}
+\usepackage{microtype}
+\usepackage{xparse}
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+% Boxes
+\usepackage[most]{tcolorbox}
+% Plots (pgfplots provides axis/addplot)
+\usepackage{pgfplots}
+\usetikzlibrary{intersections}
+\usepgfplotslibrary{fillbetween}
+\pgfplotsset{compat=1.18}
+\NewDocumentCommand{\subsubsubsection}{s m}{%
+  \IfBooleanTF{#1}{\paragraph*{#2}}{\paragraph{#2}}%
+}
+\usetikzlibrary
+{arrows.meta, calc, fit, decorations.pathmorphing, decorations.pathreplacing, shapes.geometric, shadings, positioning,
+  decorations.markings, patterns}
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\theoremstyle{definition}
+
+\firstpage{1}
+\setcounter{page}{\@firstpage}
+\pubvolume{1}
+\issuenum{1}
+\articlenumber{0}
+\pubyear{2026}
+\copyrightyear{2026}
+\datereceived{ }
+\daterevised{ } % Comment out if no revised date
+\dateaccepted{ }
+\datepublished{ }
+\doinum{}
+
+\Title{A Single Effective Framework Underlying Galaxy Rotation Curves and the Hubble Tension}
+
+\newcommand{\orcidauthorA}{0009-0001-7697-7868}
+
+\Author{Jerome Beau$^{1,*}$}
+
+\AuthorNames{Jerome Beau}
+
+\address{%
+  \quad Independent Researcher, France; jerome.beau@cosmochrony.org}
+
+\corres{Correspondence: jerome.beau@cosmochrony.org}
+
+\abstract
+{We investigate whether two long-standing observational anomalies---flat galaxy rotation curves and the Hubble constant
+tension---may originate from a common effective mechanism operating in low-density environments. We introduce a minimal
+phenomenological framework in which departures from Newtonian expectations arise from a bounded saturation of the
+effective gravitational response at the level of kinematic inference,
+  without invoking dark matter particles or modifying the background Friedmann expansion or early-universe physics. In
+  the galactic regime,
+  the empirically established low-acceleration phenomenology arises as the saturated limit of the effective kinematic
+  inference,
+  with no modification of the gravitational law. The description reduces to standard Newtonian behavior in high-density
+  environments and introduces a smooth, finite effective response in diffuse systems. Applied to disk galaxies,
+  the framework reproduces the main features of observed rotation curves across a broad range of morphologies using
+  baryonic matter alone,
+  with stable parameter values and no halo-by-halo tuning. Explicit comparisons with representative galaxies from the
+  SPARC sample show that the effective saturation scale correlates with observed surface-density-dependent trends. At
+  cosmological scales,
+  the same bounded-response structure predicts environment-dependent shifts in the locally inferred expansion rate. For
+  typical void density contrasts,
+  an explicit order-of-magnitude estimate demonstrates that the deep-saturation regime applies,
+  yielding a fractional shift $\Delta H/H \simeq \delta_\rho f_{\max}$
+  without introducing additional cosmological degrees of freedom or altering the global expansion history. Cosmic voids
+  thus provide a natural setting for a systematic offset between local and global determinations of the Hubble constant.
+  We examine robustness, degeneracies with standard astrophysical effects, and limitations of the effective description,
+  and outline distinctive observational signatures,
+  including environment-dependent redshift drift and subtle weak-lensing modifications in extreme low-acceleration
+  regimes. These results suggest that galaxy rotation curves and the Hubble tension may reflect a shared low-density
+  phenomenology testable with current and forthcoming observations. We finally isolate a structural expansion sector:
+  under an explicitly stated rank--time dictionary hypothesis,
+  the accelerated component of expansion is carried by the branching of projectively distinguishable histories---an
+  exact Pell count with rate $\log(1+\sqrt{2})$---rather than by a dark-energy fluid,
+  and the naive state-volume reading is quantitatively excluded.}
+
+\keyword{cosmology; galaxy rotation curves; Hubble tension; galactic dynamics; voids}
+
+\providecommand{\bibcommenthead}{}
+
+\begin{document}
+
+  \input{01-introduction/introduction}
+  \input{02-effective_model/effective_model}
+  \input{03-rotation_curves/rotation_curves}
+  \input{04-voids_hubble/voids_hubble}
+  \input{05-robustness/robustness}
+  \input{05b-history-branching/history_branching}
+  \input{06-predictions/predictions}
+  \input{07-conclusion/conclusion}
+
+  \appendix
+  \input{A-cosmo_resolution_proof}
+
+  \dataavailability{%
+    The galaxy rotation-curve data used in this work are drawn from the publicly available
+    SPARC database~\cite{Lelli2016SPARC}.
+    The numerical code used to generate the galaxy rotation-curve figures and associated
+    diagnostics is openly available and archived with a persistent identifier.
+    The version used in this work is available via Zenodo at
+    \url{https://doi.org/10.5281/zenodo.18462369}~\cite{CosmochronySimulation}.%
+  }
+
+  \acknowledgments
+  {The author acknowledges the use of large language models as an editorial and analytical assistant during manuscript
+  preparation, including help with phrasing alternatives, consistency checks, and structured rewriting.
+  All scientific claims, modelling choices, numerical results, and interpretations are the sole responsibility of the
+  author.}
+
+  \conflictsofinterest{The author declares no conflicts of interest.}
+
+  \reftitle{References}
+  \bibliography{references}
+
+\end{document}
