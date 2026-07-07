@@ -2,109 +2,204 @@
 
 \bibitem[Lelli et~al.(2016)Lelli, McGaugh, and Schombert]{Lelli2016SPARC}
 Lelli, F.; McGaugh, S.S.; Schombert, J.M.
-\newblock SPARC: Mass Models for 175 Disk Galaxies with Spitzer Photometry and
-  Accurate Rotation Curves.
+\newblock {SPARC: Mass Models for 175 Disk Galaxies with Spitzer Photometry and
+  Accurate Rotation Curves}.
 \newblock {\em AJ} {\bf 2016}, {\em 152},~157.
 
 \bibitem[McGaugh et~al.(2016)McGaugh, Lelli, and Schombert]{McGaugh2016}
 McGaugh, S.S.; Lelli, F.; Schombert, J.M.
-\newblock Radial Acceleration Relation in Rotationally Supported Galaxies.
+\newblock {Radial Acceleration Relation in Rotationally Supported Galaxies}.
 \newblock {\em Physical Review Letters} {\bf 2016}, {\em 117},~201101.
 \newblock {\url{https://doi.org/10.1103/PhysRevLett.117.201101}}.
 
 \bibitem[Milgrom(1983)]{Milgrom1983}
 Milgrom, M.
-\newblock A Modification of the Newtonian Dynamics as a Possible Alternative to
-  the Hidden Mass Hypothesis.
+\newblock {A Modification of the Newtonian Dynamics as a Possible Alternative
+  to the Hidden Mass Hypothesis}.
 \newblock {\em ApJ} {\bf 1983}, {\em 270},~365--370.
 
 \bibitem[Bekenstein and Milgrom(1984)]{Bekenstein1984}
 Bekenstein, J.; Milgrom, M.
-\newblock Does the missing mass problem signal the breakdown of Newtonian
-  gravity?
+\newblock {Does the missing mass problem signal the breakdown of Newtonian
+  gravity?}
 \newblock {\em The Astrophysical Journal} {\bf 1984}, {\em 286},~7--14.
 
 \bibitem[Riess(2022)]{Riess2022SH0ES}
 Riess, A.G.e.a.
-\newblock A Comprehensive Measurement of the Local Value of the Hubble
-  Constant.
+\newblock {A Comprehensive Measurement of the Local Value of the Hubble
+  Constant}.
 \newblock {\em ApJ} {\bf 2022}, {\em 934},~L7.
 
 \bibitem[Collaboration(2020)]{Planck2020}
 Collaboration, P.
-\newblock Planck 2018 results. VI. Cosmological parameters.
+\newblock {Planck 2018 results. VI. Cosmological parameters}.
 \newblock {\em A\&A} {\bf 2020}, {\em 641},~A6.
 
 \bibitem[Verde et~al.(2019)Verde, Treu, and Riess]{Verde2019Review}
 Verde, L.; Treu, T.; Riess, A.G.
-\newblock Tensions between the Early and the Late Universe.
+\newblock {Tensions between the Early and the Late Universe}.
 \newblock {\em Nature Astronomy} {\bf 2019}, {\em 3},~891--895.
 
 \bibitem[Beau(2026{\natexlab{a}})]{Beau2026c}
 Beau, J.
-\newblock Bounded Relaxation and the Dynamical Selection of Spacetime Geometry.
+\newblock {Bounded Relaxation and the Dynamical Selection of Spacetime
+  Geometry}.
 \newblock {\em Preprint} {\bf 2026}.
 \newblock Cosmochrony companion paper C,
   {\url{https://doi.org/10.5281/zenodo.18407505}}.
 
 \bibitem[Beau(2026{\natexlab{b}})]{Beau2026a}
 Beau, J.
-\newblock Relational Reconstruction of Spacetime Geometry from Graph
-  Laplacians.
+\newblock {Relational Reconstruction of Spacetime Geometry from Graph
+  Laplacians}.
 \newblock {\em Preprint} {\bf 2026}.
 \newblock Cosmochrony companion paper A,
   {\url{https://doi.org/10.5281/zenodo.18356037}}.
 
 \bibitem[Beau(2026{\natexlab{c}})]{Beau2026b}
 Beau, J.
-\newblock Bell-Inequality Violations from Non-Injective Projection.
+\newblock {Bell-Inequality Violations from Non-Injective Projection}.
 \newblock {\em Preprint} {\bf 2026}.
 \newblock Cosmochrony companion paper B,
   {\url{https://doi.org/10.5281/zenodo.18371173}}.
 
+\bibitem[Beau(2026{\natexlab{d}})]{CosmochronySimulation}
+Beau, J.
+\newblock {Cosmochrony Simulation Code: Cosmology and Rotation-Curve Pipeline},
+   2026.
+\newblock {\url{https://doi.org/10.5281/zenodo.18462369}}.
+
 \bibitem[Freedman(2021)]{Freedman2021TRGB}
 Freedman, W.L.
-\newblock Measurements of the {Hubble} Constant: Tensions in Perspective.
+\newblock {Measurements of the {Hubble} Constant: Tensions in Perspective}.
 \newblock {\em ApJ} {\bf 2021}, {\em 919},~16.
 
 \bibitem[Keenan et~al.(2013)Keenan, Barger, and Cowie]{Keenan2013KBC}
 Keenan, R.C.; Barger, A.J.; Cowie, L.L.
-\newblock Evidence for a ~300 Mpc Scale Under-density in the Local Galaxy
-  Distribution.
+\newblock {Evidence for a ~300 Mpc Scale Under-density in the Local Galaxy
+  Distribution}.
 \newblock {\em ApJ} {\bf 2013}, {\em 775},~62.
 
 \bibitem[Shanks(2019)]{Shanks2019Void}
 Shanks, T.e.a.
-\newblock Local voids as the origin of the Hubble tension.
+\newblock {Local voids as the origin of the Hubble tension}.
 \newblock {\em MNRAS} {\bf 2019}, {\em 484},~L64--L68.
 
 \bibitem[Kenworthy et~al.(2019)Kenworthy, Scolnic, and
   Riess]{Kennworthy2019VoidCritique}
 Kenworthy, W.D.; Scolnic, D.; Riess, A.G.
-\newblock The Local Perspective on the Hubble Tension.
+\newblock {The Local Perspective on the Hubble Tension}.
 \newblock {\em ApJ} {\bf 2019}, {\em 875},~145.
 
 \bibitem[Cai et~al.(2017)Cai, Padilla, and Li]{Cai2017VoidLensing}
 Cai, Y.C.; Padilla, N.; Li, B.
-\newblock Testing gravity using cosmic voids.
+\newblock {Testing gravity using cosmic voids}.
 \newblock {\em MNRAS} {\bf 2017}, {\em 472},~4579--4592.
 
 \bibitem[Di~Cintio et~al.(2014)Di~Cintio, Brook, Dutton, Macci{\`o}, Stinson,
   and Knebe]{DiCintio2014Feedback}
 Di~Cintio, A.; Brook, C.B.; Dutton, A.A.; Macci{\`o}, A.V.; Stinson, G.S.;
   Knebe, A.
-\newblock The dependence of dark matter profiles on the stellar-to-halo mass
-  ratio: a prediction for cusps versus cores.
+\newblock {The dependence of dark matter profiles on the stellar-to-halo mass
+  ratio: a prediction for cusps versus cores}.
 \newblock {\em MNRAS} {\bf 2014}, {\em 441},~2986--2995.
 
 \bibitem[Will(2014)]{Will2014Tests}
 Will, C.M.
-\newblock The Confrontation between General Relativity and Experiment.
+\newblock {The Confrontation between General Relativity and Experiment}.
 \newblock {\em Living Reviews in Relativity} {\bf 2014}, {\em 17},~4.
+
+\bibitem[Beau(2026{\natexlab{a}})]{Beau2026tb}
+Beau, J.
+\newblock {Projective Trajectory Branching and the de Sitter Limit}.
+\newblock {\em Preprint} {\bf 2026}.
+\newblock Cosmochrony trajectory-branching note,
+  {\url{https://doi.org/10.5281/zenodo.21197757}}.
+
+\bibitem[Beau(2026{\natexlab{b}})]{Beau2026a5}
+Beau, J.
+\newblock {Asymptotic Saturation of Projective Resolution: Expander Relaxation
+  Graphs}.
+\newblock {\em Preprint} {\bf 2026}.
+\newblock Cosmochrony spectral relaxation paper,
+  {\url{https://doi.org/10.5281/zenodo.19056975}}.
+
+\bibitem[Beau(2026{\natexlab{c}})]{Beau2026tp}
+Beau, J.
+\newblock {Temporal Residual Map from the Completed Principal Symbol}.
+\newblock {\em Preprint} {\bf 2026}.
+\newblock Cosmochrony temporal-projection note,
+  {\url{https://doi.org/10.5281/zenodo.20316526}}.
+
+\bibitem[Beau(2026{\natexlab{d}})]{Beau2026Thermodynamics}
+Beau, J.
+\newblock {Local Spectral Thermodynamics and the Einstein Equation as a
+  Spectral Equilibrium Condition}.
+\newblock {\em Preprint} {\bf 2026}.
+\newblock Cosmochrony spectral-gravity sub-programme,
+  {\url{https://doi.org/10.5281/zenodo.18825655}}.
+
+\bibitem[Padmanabhan(2012)]{Padmanabhan2012}
+Padmanabhan, T.
+\newblock {Emergence and expansion of cosmic space as due to the quest for
+  holographic equipartition}.
+\newblock {\em arXiv e-prints} {\bf 2012}.
+\newblock arXiv:1206.4916 [hep-th].
+
+\bibitem[Padmanabhan(2010)]{Padmanabhan2010}
+Padmanabhan, T.
+\newblock {Thermodynamical aspects of gravity: new insights}.
+\newblock {\em Reports on Progress in Physics} {\bf 2010}, {\em 73},~046901.
+\newblock {\url{https://doi.org/10.1088/0034-4885/73/4/046901}}.
+
+\bibitem[Li(2004)]{Li2004}
+Li, M.
+\newblock {A model of holographic dark energy}.
+\newblock {\em Physics Letters B} {\bf 2004}, {\em 603},~1--5.
+\newblock {\url{https://doi.org/10.1016/j.physletb.2004.10.014}}.
+
+\bibitem[Jacobson(1995)]{Jacobson1995}
+Jacobson, T.
+\newblock {Thermodynamics of spacetime: the Einstein equation of state}.
+\newblock {\em Physical Review Letters} {\bf 1995}, {\em 75},~1260--1263.
+\newblock {\url{https://doi.org/10.1103/PhysRevLett.75.1260}}.
+
+\bibitem[Verlinde(2011)]{Verlinde2011}
+Verlinde, E.
+\newblock {On the origin of gravity and the laws of Newton}.
+\newblock {\em Journal of High Energy Physics} {\bf 2011}, {\em 2011},~029.
+\newblock {\url{https://doi.org/10.1007/JHEP04(2011)029}}.
+
+\bibitem[Bombelli et~al.(1987)Bombelli, Lee, Meyer, and Sorkin]{Bombelli1987}
+Bombelli, L.; Lee, J.; Meyer, D.; Sorkin, R.D.
+\newblock {Space-time as a causal set}.
+\newblock {\em Physical Review Letters} {\bf 1987}, {\em 59},~521--524.
+\newblock {\url{https://doi.org/10.1103/PhysRevLett.59.521}}.
+
+\bibitem[{DESI Collaboration}(2025)]{DESI2024}
+{DESI Collaboration}.
+\newblock {DESI 2024 VI: cosmological constraints from the measurements of
+  baryon acoustic oscillations}.
+\newblock {\em Journal of Cosmology and Astroparticle Physics} {\bf 2025}, {\em
+  2025},~021.
+\newblock {\url{https://doi.org/10.1088/1475-7516/2025/02/021}}.
+
+\bibitem[Beau(2026{\natexlab{a}})]{Cosmochrony}
+Beau, J.
+\newblock {Cosmochrony: A Non-Injective Projection Theory of Emergent Physics},
+   2026.
+\newblock White paper, Zenodo, {\url{https://doi.org/10.5281/zenodo.17957509}}.
+
+\bibitem[Beau(2026{\natexlab{b}})]{Beau2026dhc}
+Beau, J.
+\newblock {Low-Multipole Suppression from Distinguishable-History Capacity}.
+\newblock {\em Preprint} {\bf 2026}.
+\newblock Cosmochrony low-ell capacity note,
+  {\url{https://doi.org/10.5281/zenodo.21204352}}.
 
 \bibitem[Pacucci et~al.(2025)Pacucci, Hernquist, and Fujii]{Pacucci2025}
 Pacucci, F.; Hernquist, L.; Fujii, M.
-\newblock Little Red Dots are Nurseries of Massive Black Holes.
+\newblock {Little Red Dots are Nurseries of Massive Black Holes}.
 \newblock {\em The Astrophysical Journal} {\bf 2025}, {\em 994},~40.
 \newblock {\url{https://doi.org/10.3847/1538-4357/ae1619}}.
 
@@ -113,25 +208,25 @@ Pacucci, F.; Hernquist, L.; Fujii, M.
   Conselice, Goolsby, Toft, and Witstok]{Rusakov2026}
 Rusakov, V.; Watson, D.; Nikopoulos, G.P.; Brammer, G.; Gottumukkala, R.;
   Harvey, T.; Heintz, K.E.; Damgaard, R.; Sim, S.A.; Sneppen, A.;  et~al.
-\newblock Little red dots as young supermassive black holes in dense ionized
-  cocoons.
+\newblock {Little red dots as young supermassive black holes in dense ionized
+  cocoons}.
 \newblock {\em Nature} {\bf 2026}, {\em 649},~574--579.
 \newblock {\url{https://doi.org/10.1038/s41586-025-09900-4}}.
 
 \bibitem[van Dokkum(2016)]{vanDokkum2016UDG}
 van Dokkum, P.e.a.
-\newblock A High Stellar Velocity Dispersion and ~100 Globular Clusters for the
-  Ultra-diffuse Galaxy Dragonfly 44.
+\newblock {A High Stellar Velocity Dispersion and ~100 Globular Clusters for
+  the Ultra-diffuse Galaxy Dragonfly 44}.
 \newblock {\em ApJ} {\bf 2016}, {\em 828},~L6.
 
 \bibitem[van Dokkum(2019)]{vanDokkum2019DF2}
 van Dokkum, P.e.a.
-\newblock A galaxy lacking dark matter.
+\newblock {A galaxy lacking dark matter}.
 \newblock {\em Nature Astronomy} {\bf 2019}, {\em 3},~1065--1072.
 
 \bibitem[Mancera~Pi{\~n}a(2019)]{ManceraPina2019UDG}
 Mancera~Pi{\~n}a, P.e.a.
-\newblock Halo masses and stellar kinematics of ultra-diffuse galaxies.
+\newblock {Halo masses and stellar kinematics of ultra-diffuse galaxies}.
 \newblock {\em ApJ} {\bf 2019}, {\em 883},~L33.
 
 \end{thebibliography}
