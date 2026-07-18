@@ -1,0 +1,38 @@
+Dear Editors,
+
+Please find attached our manuscript entitled
+“A Single Effective Mechanism for Galaxy Rotation Curves and the Hubble Tension”
+submitted for consideration as an Article in the Special Issue
+“Tensions, Anomalies, and Challenges in the Standard Cosmological Model”.
+
+This work investigates whether two long-standing observational anomalies—flat galaxy rotation curves and the Hubble
+constant tension—may originate from a common effective mechanism operating in low-density environments.
+The manuscript introduces a minimal phenomenological framework in which departures from Newtonian expectations arise
+from a bounded effective gravitational response at the level of kinematic inference, without modifying early-universe
+cosmology or introducing additional dark components.
+
+In the galactic regime, the framework reproduces the main features of observed rotation curves across a wide range of
+galaxy types using baryonic matter alone, with a single saturation scale fixed from the SPARC sample.
+At cosmological scales, the same bounded-response structure leads to an environment-dependent bias in the locally
+inferred expansion rate in deep voids. An explicit order-of-magnitude estimate shows that the deep-saturation regime
+applies for observationally inferred void parameters, yielding a fractional shift of the correct magnitude without
+introducing new cosmological degrees of freedom.
+
+The central aim of the manuscript is not to replace the standard cosmological model, but to examine whether a
+structurally consistent late-time effective mechanism may account simultaneously for distinct low-density anomalies
+while preserving the background Friedmann evolution and early-universe constraints. The paper also discusses robustness,
+ observational degeneracies, and specific empirical tests, including environment-dependent signatures in void regions
+ and high-redshift compact sources.
+
+We believe the manuscript aligns closely with the objectives of the Special Issue by addressing cosmological tensions
+within a controlled and quantitatively testable framework.
+
+This work is original, has not been published elsewhere, and is not under consideration by another journal.
+All authors have approved the manuscript.
+
+Thank you for your consideration.
+
+Sincerely,
+
+Jérôme Beau
+[jerome.beau@cosmochrony.org](mailto:jerome.beau@cosmochrony.org)
