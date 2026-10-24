@@ -7,7 +7,7 @@ authors:
     given-names: "Jérôme"
 repository-code: "https://github.com/Cosmochrony/cosmology-paper"
 url: "https://cosmochrony.org/science/cosmology/"
-version: "2.2.1"
+version: "2.4"
 doi: "10.5281/zenodo.18452299"
 license: "CC-BY-4.0"
 preferred-citation:
